@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Avenir;
+    src: url(../assets/fonts/Avenir-Book.ttf);
+}
+@font-face {
+    font-family: Avenir-Black;
+    src: url(../assets/fonts/Avenir-Black.ttf);
+}
+@font-face {
+    font-family: Avenir-Heavy;
+    src: url(../assets/fonts/Avenir-Heavy.ttf);
+}
+@font-face {
+    font-family: Avenir-Light;
+    src: url(../assets/fonts/Avenir-Light.ttf);
+}
+@font-face {
+    font-family: Avenir-Medium;
+    src: url(../assets/fonts/Avenir-Medium.ttf);
+}
+
+
+
+body{
+  background: #fdfdfe; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#fdfdfe, #ffffff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#fdfdfe, #ffffff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#fdfdfe, #ffffff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fdfdfe, #ffffff); /* Standard syntax */
+}
+
+*,p,div,main,header,footer,li,ol,ul,table,td,tr,thead,tfoot,details,summary,blockquote,section,input,select,optgroup,option,a,aside,address,cite,span{font-family: Avenir;}
+
+header#header{padding:1% 0 .7%; background-color:#222;}
+header#header p{margin-bottom: 0px;}
+.logo{color: #FFF; font-size: 1.2em;}
+.logo span{font-family: Avenir-Heavy;}
+nav#mainNav ul{margin-bottom: 0px;}
+nav#mainNav ul li{display: inline-block; padding:0 3%;}
+nav#mainNav ul li a{text-decoration: none; color:#FFF; font-family: Avenir-Light; }
+#menubars{display: none;}
+#mobileNav{display: none;}
+.hamburger{padding:0px; margin:0px;}
+.mobileNavContainer{background-color: #44318D;padding: 10% 0;margin-top: -4.5%;height: 100vh; display: none;}
+#mobileNav ul{text-align: center;margin-top: 15%;}
+#mobileNav ul li{padding:2.5% 0;}
+#mobileNav ul li a{text-decoration: none; color: #FFF; font-size: 2em;}

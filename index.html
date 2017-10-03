@@ -19,22 +19,102 @@
 <link rel="stylesheet" href="css/import.css" class="mainStyle">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.8/angular-css.min.js"></script>
-<script type="text/javascript" src="lib/js/apps/apps.js"></script>
-<script type="text/javascript" src="lib/js/controllers/controllers.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.8/angular-css.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.0.0/cjs/react.production.min.js"></script>
+<!-- <script type="text/javascript" src="lib/js/apps/apps.js"></script>
+<script type="text/javascript" src="lib/js/controllers/controllers.js"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!--CUSTOM JS-->
 
 <script>
 
+$(document).ready(function(){
+
+  ReactDOM.render(
+    <h1>Hello, world!</h1>,
+    document.getElementById('root')
+  );
+  
+});
+
+
 </script>
 </head>
 
-<body ng-app>
+<body>
 
-<header id="header" class="container-fluid"   ng-include="'templates/header-template.html'">
+<header id="header" class="container-fluid">
+
+  <div class="container">
+    <div class="row">
+
+    <div class="col-xs-9 col-sm-9 col-md-4 col-lg-6">
+      <p class="logo">
+        Design <span>Styelle</span>
+      </p>
+    </div>
+
+
+    <div class="col-xs-3 col-sm-3 col-md-8 col-lg-6">
+      <nav id="mainNav" class="row align-items-center">
+      <ul>
+        <li>
+          <a href="#our-styelle">Our Styelle</a>
+        </li>
+        <li>
+          <a href="#solutions">Solutions</a>
+        </li>
+        <li>
+          <a href="#case-studies">Case Studies</a>
+        </li>
+        <li>
+          <a href="#blog">Blog</a>
+        </li>
+        <li>
+          <a href="#contact-us">Contact Us</a>
+        </li>
+      </ul>
+      </nav>
+
+      <button id="menubars" class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+    </div>
+
+  <div class="container-fluid mobileNavContainer">
+    <div class="row">
+
+      <nav id="mobileNav" class="col-lg-12 align-items-center">
+      <ul>
+        <li>
+          <a href="#our-styelle">Our Styelle</a>
+        </li>
+        <li>
+          <a href="#solutions">Solutions</a>
+        </li>
+        <li>
+          <a href="#case-studies">Case Studies</a>
+        </li>
+        <li>
+          <a href="#blog">Blog</a>
+        </li>
+        <li>
+          <a href="#contact-us">Contact Us</a>
+        </li>
+      </ul>
+      </nav>
+
+    </div>
+    </div>
+
+  </div>
+  </div>
+
 
 </header>
 
@@ -44,6 +124,9 @@
 <div class="row">
 <div class="col-12">
 
+<div id="root">
+
+</div>
 
 
 </div><!--end col-lg-12-->

@@ -1,0 +1,19 @@
+10/23
+
+Error With Absolute positioning on the HERO image.
+
+
+<div class="container">
+<div class="row">
+<div id="project-hp" class="col-12">
+
+<div class="project-pic">
+  <img src="assets/img/homepage/project-pic-sample.jpg" />
+</div><!--end project pic-->
+
+<div class="project-details">
+  Lorem IpsumLorem IpsumLorem Ipsum
+</div><!--end project details-->
+</div><!--end col-lg-12-->
+</div><!--end row-->
+</div><!--end container-->

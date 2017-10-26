@@ -1,4 +1,19 @@
 @font-face {
+    font-family: Avenir-UltraLight;
+    src: url(../assets/fonts/AvenirNext-UltraLight.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Light;
+    src: url(../assets/fonts/Avenir-Light.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Medium;
+    src: url(../assets/fonts/Avenir-Medium.ttf);
+}
+
+@font-face {
     font-family: Avenir;
     src: url(../assets/fonts/Avenir-Book.ttf);
 }
@@ -10,38 +25,130 @@
     font-family: Avenir-Heavy;
     src: url(../assets/fonts/Avenir-Heavy.ttf);
 }
-@font-face {
-    font-family: Avenir-Light;
-    src: url(../assets/fonts/Avenir-Light.ttf);
-}
-@font-face {
-    font-family: Avenir-Medium;
-    src: url(../assets/fonts/Avenir-Medium.ttf);
-}
 
 
+
+
+
+ @import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700');
 
 body{
   background: #fdfdfe; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#fdfdfe, #ffffff); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#fdfdfe, #ffffff); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#fdfdfe, #ffffff); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#fdfdfe, #ffffff); /* Standard syntax */
-}
+  /*background: -webkit-linear-gradient(#fdfdfe, #ffffff); /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(#fdfdfe, #ffffff); /* For Opera 11.1 to 12.0 */*/
+  /*background: -moz-linear-gradient(#fdfdfe, #ffffff); /* For Firefox 3.6 to 15 */*/
+  /*background: linear-gradient(#fdfdfe, #ffffff); /* Standard syntax */*/*/
+*/}
 
 *,p,div,main,header,footer,li,ol,ul,table,td,tr,thead,tfoot,details,summary,blockquote,section,input,select,optgroup,option,a,aside,address,cite,span{font-family: Avenir;}
+.white{color:#FFF;}
+.ave-ul{font-family: Avenir-UltraLight;}
+.ave-l{font-family: Avenir-Light;}
+.ave-m{font-family: Avenir-Medium;}
+.ave{font-family: Avenir;}
+.ave-h{font-family: Avenir-Heavy;}
+.ave-b{font-family: Avenir-Black;}
 
-header#header{padding:1% 0 .7%; background-color:#222;}
+
+.hp-section-title{font-family: Avenir-UltraLight;}
+.hp-section-title span{font-family: Avenir-Black;}
+.hp-section-subtitle{}
+.hp-section-subtitle span{}
+
+
+
+/*BUTTONS*/
+.btn-container{position: relative;}
+.btn-default{background-color: #d83f87; border-radius: 0px; color:#FFF; font-size: 1.2em; border: none;
+font-family: Avenir-Light; padding: 1.1em 2.3em; clip-path:polygon(0% 0%, 50% 0, 50% 18%, 100% 18%, 100% 100%, 50% 100%, 50% 82%, 0% 82%); position: absolute;}
+
+header#header{background-color:#111;}
 header#header p{margin-bottom: 0px;}
-.logo{color: #FFF; font-size: 1.2em;}
-.logo span{font-family: Avenir-Heavy;}
-nav#mainNav ul{margin-bottom: 0px;}
+#top-header{margin-top: 2%; margin-bottom: 1%; }
+
+/*STYLING FOR THE LOGO*/
+#logo{color: #FFF; font-size: 1.2em; font-family: Orbitron, sans-serif; font-weight: 400; padding: 2% 0; letter-spacing: .2em;}
+#logo span{color: #d83f87; letter-spacing: normal;}
+
+/*STYLING FOR THE MAIN NAVIGATION ON DESKTOP*/
+nav#mainNav ul{margin-bottom: 0px; padding: 2% 0;}
 nav#mainNav ul li{display: inline-block; padding:0 3%;}
-nav#mainNav ul li a{text-decoration: none; color:#FFF; font-family: Avenir-Light; }
+nav#mainNav ul li a{text-decoration: none; color:#FFF; font-family: Avenir-UltraLight; font-size:1.1em;}
+nav#mainNav ul li:not(.contact-link):hover a {border-bottom: 1px solid #d83f87; padding-bottom: 8px;}
+li a.mail-icon-circle i{background-color: #d83f87; padding: 10px; border-radius: 20px; border:1px solid #d83f87;}
+li a.mail-icon-circle:hover i{background-color: #FFF; color:#d83f87;
+transition: background-color .5s; -webkit-transition: background-color .5s; -ms-transition: background-color .5s;
+transition: color .5s; -webkit-transition: color .5s; -ms-transition: color .5s;
+}
+
+
+/*STYLING FOR THE MAIN NAVIGATION ON MOBILE*/
 #menubars{display: none;}
-#mobileNav{display: none;}
+#mobileNav{display: none; }
 .hamburger{padding:0px; margin:0px;}
-.mobileNavContainer{background-color: #44318D;padding: 10% 0;margin-top: -4.5%;height: 100vh; display: none;}
+.mobileNavContainer{background-color: #44318D;padding: 10% 0;margin-top: -4.5%; height: 100vh; display: none;}
 #mobileNav ul{text-align: center;margin-top: 15%;}
 #mobileNav ul li{padding:2.5% 0;}
 #mobileNav ul li a{text-decoration: none; color: #FFF; font-size: 2em;}
+
+
+/*STYLING FOR THE HERO IMAGE*/
+#hero{}
+.hero-fg-text{text-align: center;}
+.hero-fg-text h1{color:#FFF; font-size:4.5em; line-height:1.3em;}
+.hero-fg-text .leftArrow{padding-right: 15px;}
+.hero-fg-text em{font-style: italic; }
+/*.hero-fg-text svg{margin-top:10px;}*/
+.hero-text-container{margin:2% auto; padding:12% 0;  background: url('../assets/img/hero/hero-bg@2x.png') no-repeat center center; position:relative; background-size: 85% auto; height: 100%;}
+.hero-fg-ln1{font-family: Avenir-UltraLight;}
+.svg-arrow-one{position: absolute; top:150px; left:290px;}
+.svg-arrow-two{position: absolute; top:100px; right:200px;}
+.svg-arrow-three{position: absolute; bottom:100px; right:300px;}
+
+/*RECENT PROJECTS*/
+.recent-projects-container{background: #111111 url('../assets/img/homepage/recent-projects-bg.png') no-repeat center top; background-size: cover; padding-bottom: 4%;}
+.recent-projects{padding-top:3%; padding-bottom: 3%;}
+figure.project-pic{z-index: 1; display:block; position: relative;}
+figure.project-pic img{max-width: 375px; height: auto;}
+figcaption.project-details-1{z-index:11; position: absolute; top:30%; right:0;}
+figcaption.project-details-2{z-index:11; position: absolute; top:30%; left:-60px;}
+figcaption.project-details-3{z-index:11; position: absolute; top:30%; right:0;}
+figcaption.project-details span{display: block; clear:both;}
+.project-title, .project-subject, .view-project-link a{text-shadow: 0px 0px 15px #444;}
+.project-title{font-family: Avenir-Heavy; color: #FFF; font-size: 1.5em;}
+.project-subject{font-family: Avenir-Light; color: #FFF; opacity:.5;}
+.view-project-link a{font-family: Avenir-Book; color:#d83f87;}
+.view-project-link a:hover{color:#78244c;}
+.project-details-1-container{padding-left: 10%;}
+.project-details-2-container{padding-top:5%;}
+.portfolio-button-hp{margin: 2em 0 0;}
+
+
+/*CTA BLOCKS*/
+#cta-blocks-hp{padding-top: 5%;}
+.cta-blocks-header{margin-bottom: 35px;}
+.cta-blocks{display:-webkit-flex; display: -ms-flexbox; display: flex; overflow: hidden; align-items: top; align-content: center; justify-content: center;}
+.cta-blocks .col-lg-3{padding-right: 2.5px; padding-left: 2.5px;}
+.cta-block{margin-bottom: 2.5px; display: -webkit-flex; display: -ms-flexbox; display: flex; overflow: hidden; align-items: center; align-content: center; justify-content: center;}
+.cta-block-content{padding: 2em 1em 3em; width: 100%; height: 100%; min-height: 280px; }
+
+.cta-type-blog{text-align: center;}
+.cta-type-blog1{background-color: #78244c; color: #FFF;}
+.cta-type-blog2{background-color: #e07401; color: #FFF;}
+/*.cta-type-blog3{background-color: #78244c; color: #FFF;}*/
+.cta-blog-title{font-family: Avenir-Heavy;}
+.cta-blog-blurb{font-family: Avenir-UltraLight;}
+.cta-blog-button{margin-top:2em;}
+.cta-blog-button a{border:1px solid #FFF; padding:.6em 2em; background-color: none; color: #FFF; }
+.cta-blog-button:hover a{text-decoration: none; color: #78244c; background-color: #FFF; -webkit-transition: background-color .5s; -ms-transition: background-color .5s; transition: background-color .5s; -webkit-transition: color .5s; -ms-transition: color .5s; transition: color .5s;}
+
+.cta-block-img-bg{}
+.cta-block-img-bg1{background: url('../assets/img/homepage/app-img.jpg') no-repeat center center; background-position: center center; background-size: cover;}
+.cta-block-img-bg2{background: url('../assets/img/homepage/ebonee.jpg') no-repeat center center; background-position: center center; background-size: cover;}
+.cta-block-img-bg3{background: url('../assets/img/homepage/woman-waterfall.jpg') no-repeat center center; background-position: center center; background-size: cover;}
+.cta-block-img-bg4{background: url('../assets/img/homepage/portfolio-cta.jpg') no-repeat center center; background-position: center center; background-size: cover;}
+.cta-block-img-bg5{background: url('../assets/img/homepage/small-biz.jpg') no-repeat center center; background-position: center center; background-size: cover;}
+.cta-block-img-bg6{background: url('../assets/img/homepage/atlanta.jpg') no-repeat center center; background-position: center center; background-size: cover;}
+.cta-block-img-bg7{background: url('../assets/img/homepage/vr.jpg') no-repeat center center; background-position: center center; background-size: cover;}
+.cta-block-img-bg8{background: url('../assets/img/homepage/social-media.jpg') no-repeat center center; background-position: center center; background-size: cover;}
+.cta-block-img-bg9{background: url('../assets/img/homepage/quote.jpg') no-repeat center center; background-position: center center; background-size: cover;}

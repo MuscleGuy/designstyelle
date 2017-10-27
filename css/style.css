@@ -41,6 +41,7 @@ body{
 */}
 
 *,p,div,main,header,footer,li,ol,ul,table,td,tr,thead,tfoot,details,summary,blockquote,section,input,select,optgroup,option,a,aside,address,cite,span{font-family: Avenir;}
+p,li,ol,ul,td,tr,thead,tfoot,details,summary,blockquote,section,input,select,optgroup,option,a,address,cite,span{line-height: 1.35em;}
 .white{color:#FFF;}
 .ave-ul{font-family: Avenir-UltraLight;}
 .ave-l{font-family: Avenir-Light;}
@@ -52,7 +53,7 @@ body{
 
 .hp-section-title{font-family: Avenir-UltraLight;}
 .hp-section-title span{font-family: Avenir-Black;}
-.hp-section-subtitle{}
+.hp-section-subtitle{line-height: 1.4em;}
 .hp-section-subtitle span{}
 
 
@@ -61,6 +62,8 @@ body{
 .btn-container{position: relative;}
 .btn-default{background-color: #d83f87; border-radius: 0px; color:#FFF; font-size: 1.2em; border: none;
 font-family: Avenir-Light; padding: 1.1em 2.3em; clip-path:polygon(0% 0%, 50% 0, 50% 18%, 100% 18%, 100% 100%, 50% 100%, 50% 82%, 0% 82%); position: absolute;}
+.btn-normal{background-color: #d83f87; border-radius: 0px; color:#FFF; font-size: 1.2em; border: none;
+font-family: Avenir-Light; padding: .6em 2em;}
 
 header#header{background-color:#111;}
 header#header p{margin-bottom: 0px;}
@@ -124,9 +127,30 @@ figcaption.project-details span{display: block; clear:both;}
 .portfolio-button-hp{margin: 2em 0 0;}
 
 
+/*HOW IT WORKS*/
+#how-it-works{padding: 55px 0;}
+.hiw-content-block{border: 1px solid rgba(51,51,51,.2); padding: 3em 1.5em 3.5em; text-align: center; min-height: 225px; max-height: 250px; overflow: hidden;}
+.hiw-content-block a{color:#d83f87;}
+.hiw-content-block a:hover{text-decoration: none;}
+.hiw-content-row{margin: 2em 0 0;}
+.hiw-content-title{font-family: Avenir;}
+.pricing-plan-hp{margin: 2em 0 0}
+.pricing-row-hp{border: 1px solid rgba(51,51,51,.2); padding: 3em 1em 2em; margin-left: 1em; margin-right: 1em}
+.pricing-desc-title{font-size: 2em; font-family: Avenir}
+.pricing-desc-title span{display: block; font-family: Avenir-UltraLight}
+.pricing-row-hp .btn-container{margin: 1em 0 2em;}
+.pricing-title{font-family: Avenir-Light;}
+.pricing-number{color:#d83f87; font-family: Avenir-Black; font-size: 7em; line-height: 1em;}
+.pricing-number sup{font-size: .5em;}
+.pricing-term{color:#d83f87; font-family: Avenir-Black; font-size: 2em; line-height: 1em;}
+.pricing-disclosure span,.pricing-disclosure{font-size: .9em; text-align: center; font-family: Avenir-UltraLight;}
+.pricing-disclosure span{display: block;}
+.pricing-border-hp{border-right: 1px solid #d83f87;}
+
 /*CTA BLOCKS*/
-#cta-blocks-hp{padding-top: 5%;}
+#cta-blocks-hp{padding-top: 5%; padding-bottom: 10%;}
 .cta-blocks-header{margin-bottom: 35px;}
+.cta-blocks-wrapper{background: url('../assets/img/homepage/cta-blocks-bg.jpg') no-repeat center center; background-size: cover;}
 .cta-blocks{display:-webkit-flex; display: -ms-flexbox; display: flex; overflow: hidden; align-items: top; align-content: center; justify-content: center;}
 .cta-blocks .col-lg-3{padding-right: 2.5px; padding-left: 2.5px;}
 .cta-block{margin-bottom: 2.5px; display: -webkit-flex; display: -ms-flexbox; display: flex; overflow: hidden; align-items: center; align-content: center; justify-content: center;}
@@ -152,3 +176,15 @@ figcaption.project-details span{display: block; clear:both;}
 .cta-block-img-bg7{background: url('../assets/img/homepage/vr.jpg') no-repeat center center; background-position: center center; background-size: cover;}
 .cta-block-img-bg8{background: url('../assets/img/homepage/social-media.jpg') no-repeat center center; background-position: center center; background-size: cover;}
 .cta-block-img-bg9{background: url('../assets/img/homepage/quote.jpg') no-repeat center center; background-position: center center; background-size: cover;}
+
+/*CLIENT LOGOS*/
+.clients-row-hp{margin: 2% 0 0;}
+.client-logos-inline{margin-top: 2em; margin-bottom: 2em;}
+.client-logos-inline img{max-width: 150px; height: auto; padding:0 2em;}
+
+
+/*
+.clients-row-hp{margin: 2% 0 0;}
+.client-logos-inline{margin-top: 2em; margin-bottom: 2em;}
+.client-logos-inline li{display: inline-block; list-style: none; padding: 0 1.3em;}
+.client-logos-inline li img{max-width: 100px; height: auto;}*/

@@ -182,6 +182,8 @@ figcaption.project-details span{display: block; clear:both;}
 .client-logos-inline{margin-top: 2em; margin-bottom: 2em;}
 .client-logos-inline img{max-width: 150px; height: auto; padding:0 2em;}
 
+/*OUR TEAM*/
+#our-team .hp-section-title{margin-bottom: 1em;}
 
 /*
 .clients-row-hp{margin: 2% 0 0;}

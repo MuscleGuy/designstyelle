@@ -56,6 +56,11 @@ p,li,ol,ul,td,tr,thead,tfoot,details,summary,blockquote,section,input,select,opt
 .hp-section-subtitle{line-height: 1.4em;}
 .hp-section-subtitle span{}
 
+.block-details{}
+.block-details span{display: block;}
+.block-title{font-family:Avenir-Black ; color:#c9c9c9 ; font-size: 4em; line-height: 1em; opacity: .7;}
+.block-subtitle{font-family:Avenir-Black ; color:# 000; font-size: 2.5em;}
+.block-blurb{font-family:Avenir-Light; color:#555 ; font-size: 1.3em; margin: 15px 0 0;}
 
 
 /*BUTTONS*/
@@ -67,8 +72,9 @@ font-family: Avenir-Light; padding: .6em 2em;}
 
 header#header{background-color:#111;}
 header#header p{margin-bottom: 0px;}
+header.innerpage-header{clip-path:polygon(0% 0%, 100% 0, 100% 100%, 55% 100%, 55% 87%, 0% 87%);}
 #top-header{margin-top: 2%; margin-bottom: 1%; }
-
+#main{}
 /*STYLING FOR THE LOGO*/
 #logo{color: #FFF; font-size: 1.2em; font-family: Orbitron, sans-serif; font-weight: 400; padding: 2% 0; letter-spacing: .2em;}
 #logo span{color: #d83f87; letter-spacing: normal;}
@@ -107,6 +113,14 @@ transition: color .5s; -webkit-transition: color .5s; -ms-transition: color .5s;
 .svg-arrow-one{position: absolute; top:150px; left:290px;}
 .svg-arrow-two{position: absolute; top:100px; right:200px;}
 .svg-arrow-three{position: absolute; bottom:100px; right:300px;}
+
+.page-title-container{margin:2% auto; padding:10% 0 15.5%;}
+.page-title-text{text-align: center;}
+.page-title-text h1{color:#FFF; font-size:3.5em; line-height:1.3em;}
+.page-title-text .leftArrow{padding-right: 15px;}
+.page-title-text em{font-style: italic; }
+.page-title-ln1{font-family: Avenir-Medium; font-size:1.5em;}
+.page-title-ln2{font-size: 1em; font-family: Avenir-UltraLight;}
 
 /*RECENT PROJECTS*/
 .recent-projects-container{background: #111111 url('../assets/img/homepage/recent-projects-bg.png') no-repeat center top; background-size: cover; padding-bottom: 4%;}
@@ -179,11 +193,30 @@ figcaption.project-details span{display: block; clear:both;}
 
 /*CLIENT LOGOS*/
 .clients-row-hp{margin: 2% 0 0;}
-.client-logos-inline{margin-top: 2em; margin-bottom: 2em;}
+.client-logos-inline{margin-top: 2em; margin-bottom: 2em; }
 .client-logos-inline img{max-width: 150px; height: auto; padding:0 2em;}
 
 /*OUR TEAM*/
 #our-team .hp-section-title{margin-bottom: 1em;}
+.team-thumbnails{display: flex; align-items: center; margin:1.5em 0;}
+.member-select{padding:.2em;}
+.thumb-name{text-align: center;}
+.member-thumb{border: 1px solid rgba(51,51,51,.2); padding:1em 2em;}
+.member-thumb img{max-height: 100px; width: auto;  }
+.team-member-bio-row{display: flex; align-items: center;}
+.team-member-bio-container{background: #FFF; padding: 1.5em;}
+.team-member-name{font-size: 1.3em;}
+.team-member-bio{}
+.team-member-email{}
+.team-member-email a{color:#d83f87; text-decoration:none;}
+.team-member-email:hover a{color:#d83f87; text-decoration:none;}
+
+
+/*FOOTER*/
+
+
+/*COPYRIGHT*/
+#copyright{background: #111; color:#aaa; font-size: 1em; padding-top: 2em; padding-bottom: 2em; font-family: Avenir-UltraLight;}
 
 /*
 .clients-row-hp{margin: 2% 0 0;}

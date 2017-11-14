@@ -9,7 +9,4 @@ templateUrl:'./portfolio.component.html'
 
 export class PortfolioComponent{
 
-portfolioDetails : [name:'Portfolio Stuff']
-
-
 }

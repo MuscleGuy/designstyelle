@@ -9,13 +9,14 @@ import {HowItWorksComponent} from './how-it-works.component';
 import {HomePageComponent} from './home-page.component';
 import {PortfolioComponent} from './portfolio.component';
 import {ContactComponent} from './contact.component';
+import {MarketingComponent} from './marketing.component';
 
 import {routing} from './app.routing';
 
 
 @NgModule({
   declarations: [
-    AppComponent,TopHeaderComponent,AppFooterBlockComponent,SolutionsComponent,HowItWorksComponent,HomePageComponent,ContactComponent,PortfolioComponent
+    AppComponent,TopHeaderComponent,AppFooterBlockComponent,SolutionsComponent,HowItWorksComponent,HomePageComponent,ContactComponent,PortfolioComponent,MarketingComponent
   ],
   imports: [
     BrowserModule,routing

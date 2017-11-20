@@ -16,39 +16,50 @@
   <link rel="icon" type="image/x-icon" href="assets/img/favicons/favicon-32.png" sizes="32x32">
   <link rel="icon" type="image/x-icon" href="assets/img/favicons/favicon-144.png" sizes="144x144">
   <link rel="icon" type="image/x-icon" href="assets/img/favicons/favicon-152.png" sizes="152x152">
-  <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.9/release/featherlight.min.css" type="text/css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109711899-1"></script>
+  <!--HOTJAR CODE-->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109711899-1');
+  </script>
+
 </head>
 <body>
   <app-root></app-root>
 
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.0/pagination.css" rel="stylesheet"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.0/pagination.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.0/pagination.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.9/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.0/pagination.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function(){
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109711899-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        $('.recent-projects-magnific,.portfolio-solutions').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          gallery: {enabled: true},
+          disableOn: 600
+        });
 
-  gtag('config', 'UA-109711899-1');
+        $('.designPortfolio, .graphicsPortfolio, .brandingPortfolio').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          disableOn: 600
+        });
+
+    });
 </script>
-<!-- Hotjar Tracking Code for http://designstyelle.com -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:690828,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+
 
 
 <script>
@@ -353,13 +364,11 @@ $(function() {
 
 dataHtml +='<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-4">';
 dataHtml +='<div class="portfolio-block">';
-dataHtml +='<span class="portfolio-img"><a href="'+ item.project_pic +'" alt="" class="" data-featherlight="image"><img src="'+ item.project_pic +'"/></a></span>';
+dataHtml +='<span class="portfolio-img"><a href="'+ item.project_pic +'" class="project-pic-magnific"><img src="'+ item.project_pic +'"/></a></span>';
 dataHtml +='<div class="portfolio-details-wrapper">';
 dataHtml +='<span class="portfolio-title">'+ item.project_title + ' ';
 dataHtml +='<svg xmlns="http://www.w3.o" height="12" width="12"><polygon points="0,0 12,6 0,12" fill="#FFF" stroke="#FFF" stroke-width="1"></polygon></svg>';
 dataHtml +='</span>';
-
-
 dataHtml +='<span class="portfolio-category"><i class="fa fa-laptop"></i>'+ item.project_cat +'</span>';
 dataHtml +='</div><!--end portfolio-details-wrapper-->';
 dataHtml +='</div><!--end portfolio block-->';
@@ -670,7 +679,7 @@ $(function() {
 
 dataHtml +='<div class="col col-xs-6 col-sm-6 col-md-4 col-lg-2">';
 dataHtml +='<div class="portfolio-block">';
-dataHtml +='<span class="portfolio-img"><a href="'+ item.project_pic +'" alt="" class="" data-featherlight="image"><img src="'+ item.project_pic +'"/></a></span>';
+dataHtml +='<span class="portfolio-img"><a href="'+ item.project_pic +'" alt="" class=""><img src="'+ item.project_pic +'"/></a></span>';
 dataHtml +='</div>';
 dataHtml +='</div>';
 
@@ -1041,7 +1050,7 @@ $(function() {
 
 dataHtml +='<div class="col col-xs-6 col-sm-6 col-md-4 col-lg-2">';
 dataHtml +='<div class="portfolio-block">';
-dataHtml +='<span class="portfolio-img"><a href="'+ item.project_pic +'" alt="" class="" data-featherlight="image"><img src="'+ item.project_pic +'"/></a></span>';
+dataHtml +='<span class="portfolio-img"><a href="'+ item.project_pic +'" alt="" class=""><img src="'+ item.project_pic +'"/></a></span>';
 dataHtml +='</div><!--end portfolio block-->';
 dataHtml +='</div><!--end col col-lg-3-->';
 

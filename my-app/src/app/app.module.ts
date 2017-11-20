@@ -10,13 +10,16 @@ import {HomePageComponent} from './home-page.component';
 import {PortfolioComponent} from './portfolio.component';
 import {ContactComponent} from './contact.component';
 import {MarketingComponent} from './marketing.component';
+import {ProductComponent} from './product.component';
+import {DevelopmentComponent} from './development.component';
+import {BrandingComponent} from './branding.component';
 
 import {routing} from './app.routing';
 
 
 @NgModule({
   declarations: [
-    AppComponent,TopHeaderComponent,AppFooterBlockComponent,SolutionsComponent,HowItWorksComponent,HomePageComponent,ContactComponent,PortfolioComponent,MarketingComponent
+    AppComponent,TopHeaderComponent,AppFooterBlockComponent,SolutionsComponent,HowItWorksComponent,HomePageComponent,ContactComponent,PortfolioComponent,MarketingComponent,BrandingComponent,DevelopmentComponent,ProductComponent
   ],
   imports: [
     BrowserModule,routing

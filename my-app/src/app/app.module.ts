@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import {TopHeaderComponent} from './top-header.component';
 import {AppFooterBlockComponent} from './app-footer-block.component';
@@ -19,7 +18,7 @@ import {routing} from './app.routing';
 
 @NgModule({
   declarations: [
-    AppComponent,TopHeaderComponent,AppFooterBlockComponent,SolutionsComponent,HowItWorksComponent,HomePageComponent,ContactComponent,PortfolioComponent,MarketingComponent,BrandingComponent,DevelopmentComponent,ProductComponent
+    AppComponent,SolutionsComponent,HowItWorksComponent,HomePageComponent,ContactComponent,PortfolioComponent,MarketingComponent,BrandingComponent,DevelopmentComponent,ProductComponent,TopHeaderComponent,AppFooterBlockComponent
   ],
   imports: [
     BrowserModule,routing

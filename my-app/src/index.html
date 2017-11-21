@@ -29,6 +29,12 @@
     gtag('config', 'UA-109711899-1');
   </script>
 
+<script>
+$(document).ready(function(){
+$('#menubars').click(function(){
+$('#mobileNavContainer').fadeToggle(200);
+});});
+</script>
 </head>
 <body>
   <app-root></app-root>
@@ -48,13 +54,13 @@
           delegate: 'a',
           type: 'image',
           gallery: {enabled: true},
-          disableOn: 600
+          disableOn: 400
         });
 
         $('.designPortfolio, .graphicsPortfolio, .brandingPortfolio').magnificPopup({
           delegate: 'a',
           type: 'image',
-          disableOn: 600
+          disableOn: 400
         });
 
     });

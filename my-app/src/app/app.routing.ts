@@ -19,7 +19,8 @@ const appRoutes: Routes = [
 {path:'portfolio', component:PortfolioComponent},
 {path:'solutions', component:SolutionsComponent},
 {path:'how-it-works', component:HowItWorksComponent},
-{path:'', component:HomePageComponent}
+{path:'home-page', component:HomePageComponent},
+{path:'', pathMatch:'full', redirectTo:'home-page'}
 ];
 
 export const routing = RouterModule.forRoot(appRoutes);

@@ -106,7 +106,7 @@ body{background: #fdfdfe;}
 p,li,ol,ul,td,tr,thead,tfoot,details,summary,blockquote,section,input,select,optgroup,option,a,address,cite,span{line-height: 1.35em;}
 img{max-width: 100%; width: 100%; height: auto; overflow: hidden;}
 /*FLEX*/
-.row-eq-height, .flex-container {display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;}
+.row-eq-height, .flex-container,.step-flex-container {display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;}
 .section-padding{padding-top: 50px;}
 .items-center{align-items: center;}
 .ave-ul{font-family: Avenir-UltraLight;}
@@ -506,15 +506,15 @@ figure.project-pic{max-height: 320px;}
 .pricing-plan-hp h2{text-align: center;}
 .pricing-border-hp{border:none; border-right:none;}
 .cta-blocks{text-align: center;	}
-.cta-blocks .col-xs-6{width: 60%; clear: both; display: block; margin: auto; float: none; margin-bottom: 2em;}
+.cta-blocks .col-xs-6{clear: both; display: block; margin: auto; float: none; margin-bottom: 2em;}
 .cta-blocks-wrapper{background: none; background-image: none;}
 .cta-blocks,.clients-row-hp,.clients,.clientsButton{ background-color: #111111; padding-top: 2em; padding-bottom: 3em;}
 .clients-row-hp{margin-top: 0;}
 #cta-blocks-hp{padding-bottom: 5%;}
 .step-two-sol .row-eq-height,.step-three-sol .row-eq-height{display: block;}
 .sol-bg-img,.social-media-bg-img{display: none;}
-.step-two-sol,.step-one-sol{margin:0;}
-.step-two-sol .col{padding:5em 40px;}
+/*.step-two-sol,.step-one-sol{margin:0;}*/
+/*.step-two-sol .col{padding:5em 40px;}*/
 .step-dividers{display: none !important;}
 #solutions-cta .block-title{font-size: 3em; line-height: 1.3em;}
 #solutions-cta .block-subtitle{font-size:1.4em; line-height: 1.3em;}
@@ -522,14 +522,34 @@ figure.project-pic{max-height: 320px;}
 .solutions-service1 .block-title{font-size: 3em; line-height: 1.3em;}
 .solutions-service1 .block-subtitle{font-size:1.4em; line-height: 1.3em;}
 .solutions-service1 .block-title,.solutions-service1 .block-subtitle{text-align: center;}
+.step-two-hiw .col,.step-three-hiw .col{padding: 7em 20px;}
+.cta-block-hide{display: none !important;}
+.client-logos-inline img {display: block; margin: auto; padding: 0px; padding-bottom: 12px;}
+.clients-row-hp,.clients{display: none;}
+.cta-block{margin-bottom: 10px;}
+.pricing-desc-blurb{font-size: 1.2em;}
+.monthly-pricing{padding-top: 40px;}
+.step-one-hiw{margin: 4em auto;}
+.pricing-hiw{border:none;}
+.step-flex-container{display: block;}
+.competitive-matrix{display: none;}
+.block-title{font-size: 3em;}
+.step-one-sol{margin: 1em auto;}
+.step-two-sol .col:nth-child(2){margin-top: 0px;}
+.step-two-sol .col{padding: 5em 15px;}
+.pricing-sol{border:none;}
+.block-subtitle{font-size: 1.5em;}
 
-
-/*.cta-block{width: 80% !important; margin:auto; float: none !important; margin-bottom: 3em;}*/
-
+.block-blurb{font-family: Avenir-Ultralight;}
+.step-three-sol .col{padding: 5em 1em 5em 1em;}
+.seo-table td{font-size: .85em;}
+.seo-table i{display: none;}
 }
 /*Samsung Galaxy Note 5,LG G5,One Plus 3 480x853*/
 @media screen and (max-width:480px) {
-#hero {height: 90vh; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; align-items:center;; justify-content: center;}.hero-text-container-home{background: none; background-image: none;}
+#hero {height: 90vh; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; align-items:center;; justify-content: center; clip-path:none;}
+.hero-text-container-home{background: none; background-image: none;}
+.hero-text-container{padding: 20% 0 3%;}
 .hero-fg-ln1,.hero-fg-ln2{font-size: .65em; font-family: Avenir-UltraLight; display:inline;}
 .hero-fg-text h1{line-height: .8em !important; margin-top:-30px;}
 .step-dividers{display: none !important;}
@@ -545,16 +565,12 @@ figure.project-pic{max-height: 320px;}
 .pricing-row-hp{border:none;}
 .pay-disclosure{display: none;}
 #how-it-works-container{padding-bottom: 0px;}
-.cta-block-hide{display: none !important;}
-.cta-blocks .col-xs-6{width: 85%;}
-.client-logos-inline img {display: block; margin: auto; padding: 0px; padding-bottom: 12px;}
 }
 
 
 /*Apple iPhone 7 Plus, 6 Plus Nexus 6P,Nexus 5X,Google Pixel, Google Pixel XL, Samsung Galaxy S7 Edge 414x736*/
 @media screen and (max-width:414px) {
 #hero.homepage-hero{padding-bottom: 13%;}
-.hero-text-container{padding: 4% 0 3%;}
 /*.hero-fg-ln1,.hero-fg-ln2{font-size: .3em; line-height: 1em;}*/
 .homepage-hero svg{display: none}
 .hp-section-title{font-size: 2em;}

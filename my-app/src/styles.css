@@ -235,11 +235,12 @@ figcaption.project-details span{display: block; clear:both;}
 .pricing-title{font-family: Avenir-Light;}
 .pricing-number{color:#d83f87; font-family: Avenir-Black; font-size: 7em; line-height: 1em;}
 .pricing-number sup{font-size: .5em;}
-.pricing-term{color:#d83f87; font-family: Avenir-Black; font-size: 2em; line-height: 1em;}
+.pricing-term{color:#d83f87; font-family: Avenir-Black; font-size: 2em; line-height: 1.35em !important;}
+.pricing-term-desc{}
 .pricing-disclosure span,.pricing-disclosure{font-size: .9em; text-align: center; font-family: Avenir-UltraLight;}
 .pricing-disclosure span{display: block;}
 .pricing-border-hp{border-right: 1px solid #d83f87;}
-
+.pricing-includes{display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; align-items: center; justify-content: center;}
 /*CTA BLOCKS*/
 #cta-blocks-hp{padding-top: 5%; padding-bottom: 10%;}
 .cta-blocks-header{margin-bottom: 35px; padding-left: 10%; padding-right: 10%;}
@@ -586,6 +587,4 @@ figure.project-pic{max-height: 320px;}
 
 /*Apple iPhone 7, 6/6s 375x667*/
 @media screen and (max-width:375px) {
-
-
 }

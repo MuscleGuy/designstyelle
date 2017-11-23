@@ -7,4 +7,8 @@ templateUrl:'./contact.component.html'
 
 })
 
-export class ContactComponent{}
+export class ContactComponent{
+
+name = "wow";
+
+}

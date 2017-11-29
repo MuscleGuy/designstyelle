@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
+import {ReactiveFormsModule} from '@angular/forms';
 import {TopHeaderComponent} from './top-header.component';
 import {AppFooterBlockComponent} from './app-footer-block.component';
 import {SolutionsComponent} from './solutions.component';
@@ -12,7 +13,6 @@ import {MarketingComponent} from './marketing.component';
 import {ProductComponent} from './product.component';
 import {DevelopmentComponent} from './development.component';
 import {BrandingComponent} from './branding.component';
-
 import {routing} from './app.routing';
 
 
@@ -21,7 +21,7 @@ import {routing} from './app.routing';
     AppComponent,SolutionsComponent,HowItWorksComponent,HomePageComponent,ContactComponent,PortfolioComponent,MarketingComponent,BrandingComponent,DevelopmentComponent,ProductComponent,TopHeaderComponent,AppFooterBlockComponent
   ],
   imports: [
-    BrowserModule,routing
+    BrowserModule,routing,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

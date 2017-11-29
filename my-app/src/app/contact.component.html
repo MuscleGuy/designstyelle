@@ -6,7 +6,7 @@
 
 <div class="col col-lg-12 align-items-center page-title-container">
 
-  <svg class="svg-arrow-one" xmlns="http://www.w3.o" height="10" width="10"><polygon points="0,0 10,0 5,10" fill="none" stroke="#d83f87" stroke-width="1"></polygon></svg>
+  <svg class="svg-arrow-one" xmlns="http://www.w3.o" height="10" width="10"><polygon points="0,0 10,0 5,10" fill="none" stroke="#049cbf" stroke-width="1"></polygon></svg>
   <svg class="svg-arrow-two" xmlns="http://www.w3.o" height="10" width="10"><polygon points="0,0 10,0 5,10" fill="none" stroke="#FFFFFF" stroke-width="1"></polygon></svg>
 
 <div class="page-title-text">
@@ -14,7 +14,7 @@
   <span class="page-title-ln2"></span></h1>
 </div>
 
-<svg class="svg-arrow-three" xmlns="http://www.w3.o" height="10" width="10"><polygon points="5,10 10,0, 0,0" fill="none" stroke="#d83f87" stroke-width="1"></polygon></svg>
+<svg class="svg-arrow-three" xmlns="http://www.w3.o" height="10" width="10"><polygon points="5,10 10,0, 0,0" fill="none" stroke="#049cbf" stroke-width="1"></polygon></svg>
 
 </div><!--end page-title-->
 </div><!--end row-->
@@ -24,6 +24,9 @@
 </div>
 </section><!--end container-->
 
+<section id="testContent" class="container">
+
+</section>
 <section id="contact-section" class="container">
 
 <div class="row row-eq-height">
@@ -48,20 +51,22 @@
 
 <div class="col-lg-9">
 
-<form id="contact-form" method="post" action="#">
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" id="contact-form">
 <fieldset class="flex-container flex-form">
-<div class="form-group flex-container"><label for="">Name</label><input type="text" name="" class="" placeholder="John Doe" required/></div>
-<div class="form-group flex-container"><label for="">Email</label><input type="email" name="" class="" placeholder="email@email.com" required/></div>
-<div class="form-group flex-container"><label for="">Phone</label><input type="tel" name="" class="" placeholder="1234567890"/></div>
+<div class="form-group flex-container"><label for="">Name</label><input type="text" name="name" class="" placeholder="John Doe" formControlName="name" required/></div>
+<div class="form-group flex-container"><label for="">Email</label><input type="email" name="email" class="" placeholder="email@email.com" formControlName="email" required/></div>
+<div class="form-group flex-container"><label for="">Phone</label><input type="tel" name="phone" class="" placeholder="1234567890" formControlName="phone"/></div>
 </fieldset>
 
 <fieldset class="form-group">
-<textarea name="" class="form-control" placeholder="How can we help you?"></textarea>
+<textarea name="message" class="form-control" placeholder="How can we help you?" formControlName="message"></textarea>
 </fieldset>
 
 <fieldset>
-  <button type="submit" class="btn btn-normal">Submit</button>
+  <button type="submit" class="btn btn-normal" [disabled]="!form.valid">Submit</button>
 </fieldset>
+
+<div *ngIf="form.controls.name.errors?.pattern">Name is invalid</div>
 </form>
 
 </div>

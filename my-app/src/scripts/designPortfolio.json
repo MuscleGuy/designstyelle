@@ -1,0 +1,285 @@
+
+/*{ "designPortfolio": [
+{
+"project_pic":"./assets/img/portfolio/alluafitnessproject1.jpg",
+"project_title":"All U a Fitness Project",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/arnslaw1.jpg",
+"project_title":"Arns Law",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/tropos1.jpg",
+"project_title":"Tropos Fitness",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+
+{
+"project_pic":"./assets/img/portfolio/b-beautiful1.jpg",
+"project_title":"B-Beautiful",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/courtney-butler1.jpg",
+"project_title":"Courtney Butler",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/realty-icons1.jpg",
+"project_title":"Realty Icons",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/retire1.jpg",
+"project_title":"Retire in Houston",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/sproing1.jpg",
+"project_title":"Sproing Fitness",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/stanley1.jpg",
+"project_title":"Stanley Nursery School",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/taxcred1.jpg",
+"project_title":"TaxCred Solutions",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/weight-loss-kings1.jpg",
+"project_title":"Weight Loss Kings",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+
+{
+"project_pic":"./assets/img/portfolio/telecursell1.jpg",
+"project_title":"TeleCursell",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+
+{
+"project_pic":"./assets/img/portfolio/thenext40years1.jpg",
+"project_title":"The Next 40 Years",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/piercelocke1.jpg",
+"project_title":"Pierce Locke",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/meghan1.jpg",
+"project_title":"Meghan Fitness",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/lau-1.jpg",
+"project_title":"LAU Consulting",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/klik1.jpg",
+"project_title":"Klik Nutrition",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/keyinsite1.jpg",
+"project_title":"Key Insite",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/karmassi1.jpg",
+"project_title":"Karma Boutique",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/itq1.jpg",
+"project_title":"ITQ Consulting",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+
+{
+"project_pic":"./assets/img/portfolio/chef1.jpg",
+"project_title":"Chef Elliot",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/certified-trades1.jpg",
+"project_title":"Certified Trades",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/catchemclub1.jpg",
+"project_title":"Catch Em Club",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/buller-group1.jpg",
+"project_title":"Buller Group",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/brooklyn1.jpg",
+"project_title":"Brooklyn Periodontics",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/amyjogoddard1.jpg",
+"project_title":"Amy Jo Goddard",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/abdallatau1.jpg",
+"project_title":"Abdalla Tau",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/247restaurantparts1.jpg",
+"project_title":"24/7 Restaurant Parts",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/chrispaul1.jpg",
+"project_title":"Chris Paul Productions",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/cyber1.jpg",
+"project_title":"Cyber Security Camp",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/deluxe1.jpg",
+"project_title":"Deluxe Homes",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/dialercall1.jpg",
+"project_title":"Dialer Call",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/exitpro1.jpg",
+"project_title":"Exit Pro",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/exposurefoundation1.jpg",
+"project_title":"Exposure Foundation",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/foiply1.jpg",
+"project_title":"FoiPly",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/harcap1.jpg",
+"project_title":"HarCap Funding",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+},
+{
+"project_pic":"./assets/img/portfolio/hayes1.jpg",
+"project_title":"Hayes Insurance",
+"project_summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+"client_since":"January 2, 2005",
+"project_cat":"Web Design, Graphic Design, SEO"
+}
+]}*/

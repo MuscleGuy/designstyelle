@@ -4,15 +4,15 @@ import { AppComponent } from './app.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {TopHeaderComponent} from './top-header.component';
 import {AppFooterBlockComponent} from './app-footer-block.component';
-import {SolutionsComponent} from './solutions.component';
-import {HowItWorksComponent} from './how-it-works.component';
-import {HomePageComponent} from './home-page.component';
-import {PortfolioComponent} from './portfolio.component';
-import {ContactComponent} from './contact.component';
-import {MarketingComponent} from './marketing.component';
-import {ProductComponent} from './product.component';
-import {DevelopmentComponent} from './development.component';
-import {BrandingComponent} from './branding.component';
+import {HomePageComponent} from './pages/homePage/home-page.component';
+import {HowItWorksComponent} from './pages/howItWorks/how-it-works.component';
+import {SolutionsComponent} from './pages/solutions/solutions.component';
+import {PortfolioComponent} from './pages//portfolio/portfolio.component';
+import {ContactComponent} from './pages/contact/contact.component';
+import {MarketingComponent} from './pages/marketing/marketing.component';
+import {ProductComponent} from './pages/product/product.component';
+import {DevelopmentComponent} from './pages/development/development.component';
+import {BrandingComponent} from './pages/branding/branding.component';
 import {routing} from './app.routing';
 
 

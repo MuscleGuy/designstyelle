@@ -1,5 +1,4 @@
-
-/*{ "designPortfolio": [
+{ "designPortfolio": [
 {
 "project_pic":"./assets/img/portfolio/alluafitnessproject1.jpg",
 "project_title":"All U a Fitness Project",
@@ -282,4 +281,4 @@
 "client_since":"January 2, 2005",
 "project_cat":"Web Design, Graphic Design, SEO"
 }
-]}*/
+]}

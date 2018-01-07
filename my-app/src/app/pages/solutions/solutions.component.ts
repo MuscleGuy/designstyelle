@@ -7,4 +7,11 @@ templateUrl:'./solutions.component.html'
 
 })
 
-export class SolutionsComponent{}
+export class SolutionsComponent{
+
+title = "Solutions";
+subtitle = "More Than Just A Design Agency";
+
+
+
+}

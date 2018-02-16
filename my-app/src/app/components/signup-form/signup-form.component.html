@@ -1,0 +1,177 @@
+<section id="hero" class="container-fluid">
+  <div class="row">
+
+  <div id="page-title" class="container">
+    <div class="row">
+
+<div class="col col-lg-12 align-items-center page-title-container">
+
+  <svg class="svg-arrow-one" xmlns="http://www.w3.o" height="10" width="10"><polygon points="0,0 10,0 5,10" fill="none" stroke="#049cbf" stroke-width="1"></polygon></svg>
+  <svg class="svg-arrow-two" xmlns="http://www.w3.o" height="10" width="10"><polygon points="0,0 10,0 5,10" fill="none" stroke="#FFFFFF" stroke-width="1"></polygon></svg>
+
+<div class="page-title-text">
+  <h1><span class="page-title-ln1">Schedule Your Consultation</span><br />
+  <span class="page-title-ln2"></span></h1>
+</div>
+
+<svg class="svg-arrow-three" xmlns="http://www.w3.o" height="10" width="10"><polygon points="5,10 10,0, 0,0" fill="none" stroke="#049cbf" stroke-width="1"></polygon></svg>
+
+</div><!--end page-title-->
+</div><!--end row-->
+</div><!--end container-->
+
+<!--end hero-text-container-->
+</div>
+</section><!--end container-->
+
+<section id="testContent" class="container">
+
+</section>
+<section id="signup-section" class="container">
+
+<div class="row row-eq-height">
+
+<div class="col-lg-3">
+  <h2 class="hp-section-title cerise1">Signup <span>Today</span></h2>
+
+<p>Fill out the form to get started on your project. Select the applicable package and be sure to schedule a date and time that works best for you. Here's a <a href="#" class="">bit of information</a> that will help you on the initial consultation.</p>
+
+<p>There is no charge for the initial consultation. We will provide a thorough evaluation of your project and provide you with a comprehensive plan that is guaranteed to help you sell more and sell fast. You are not obligated to move forward with your project after the consolutation.</p>
+
+<p>Need answers to common questions? Check out the <a href="#">FAQs</a>. Follow us on the most popular social media platforms.</p>
+
+<ul class="social-media-contact-pg">
+<li><a href="https://facebook.com"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://facebook.com"><i class="fa fa-twitter"></i></a></li>
+<li><a href="https://facebook.com"><i class="fa fa-instagram"></i></a></li>
+<li><a href="https://facebook.com"><i class="fa fa-github"></i></a></li>
+<li><a href="https://facebook.com"><i class="fa fa-pinterest"></i></a></li>
+<li><a href="https://facebook.com"><i class="fa fa-dribbble"></i></a></li>
+</ul>
+
+</div>
+
+<div class="col-lg-9">
+
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" *ngIf="showSignupForm" id="signup-form">
+<!-- <fieldset class="form-group"> -->
+
+<table id="signup-form-table">
+
+  <fieldset>
+    <tr>
+      <span class="signup-form-section-header">
+        Register & Contact Information
+      </span>
+    </tr>
+  </fieldset>
+
+  <fieldset class="form-group form-group-1">
+    <tr>
+      <td><label for="user_name">User Name <span class="red">*</span></label><input type="text" name="user_name" class="" placeholder="Select User Name" formControlName="user_name" required/></td>
+      <td><label for="user_password">Password<span class="red">*</span></label><input type="password" name="user_password" class="" placeholder="Enter Password" formControlName="user_password" required/></td>
+      <td><label for="verify_password">Verify Password<span class="red">*</span></label><input type="password" name="verify_password" class="" placeholder="Verify Password" formControlName="verify_password" required/></td>
+    </tr>
+
+    <tr>
+      <td><label for="first_name">First Name <span class="red">*</span></label><input type="text" name="first_name" class="" placeholder="Enter First Name" formControlName="first_name" required/></td>
+      <td><label for="last_name">Last Name <span class="red">*</span></label><input type="text" name="last_name" class="" placeholder="Enter Last Name" formControlName="last_name" required/></td>
+      <td><label for="email">Email <span class="red">*</span></label><input type="email" name="email" class="" placeholder="email@email.com" formControlName="email" required/></td>
+
+    </tr>
+
+</fieldset>
+
+  <fieldset>
+    <tr>
+      <span class="signup-form-section-header">
+        Let's Chat!
+      </span>
+    </tr>
+  </fieldset>
+
+<fieldset class="form-group form-group-1">
+
+    <!-- <tr>
+      <td class="signup-form-section-header">
+        How Can We Help?
+      </td>
+    </tr>
+
+  <tr>
+    <td><label for="client_url">Current Website</label><input type="client_url" name="client_url" class="" placeholder="www.yourSite.com" formControlName="client_url"/></td>
+    <td><label for="package">Select Your Package <span class="red">*</span></label>
+      <select class="" name="package" formControlName="package" required>
+        <option value disabled selected>
+          Click To Select
+        </option>
+        <option value="core_package">
+          Core Package $349
+        </option>
+        <option value="marketing_package">
+          Marketing Package $999
+        </option>
+        <option class="media_package">
+          Media Package $1,999
+        </option>
+      </select>
+    </td>
+  </tr> -->
+
+
+
+    <tr>
+
+    <td><label for="initial_consultation_date">Consultation Date <span class="red">*</span></label>
+
+      <input class="" type="date" name="initial_consultation_date" formControlName="initial_consultation_date" required/>
+    </td>
+
+    <td>
+      <label for="initial_consultation_time">Select a Time <span class="red">*</span></label>
+      <select class="" name="initial_consultation_time" formControlName="initial_consultation_time" required>
+        <option class="" value required selected>
+          Click To Select
+        </option>
+        <option value="1200pm">
+          12:00pm EST
+        </option>
+        <option value="100pm">
+          1:00pm EST
+        </option>
+
+
+      </select>
+    </td>
+
+    <td><label for="phone">Phone <span class="red">*</span></label><input type="tel" name="phone" class="" placeholder="1234567890" formControlName="phone" required/></td>
+
+  </tr>
+</fieldset>
+</table>
+
+<fieldset>
+  <button type="submit" class="btn btn-normal" [disabled]="!form.valid">Submit Form</button>
+  <button type="reset" class="btn btn-normal">Reset Form</button>
+</fieldset>
+
+<!-- <div *ngIf="form.controls.name.errors?.pattern">Name is invalid</div> -->
+</form>
+
+<span class="confirmationMessage" *ngIf="showConfirmationMessage">
+
+<h1 class="cf-thank-title">Thank you for contacting <strong class="cerise">Design Styelle!</strong></h1>
+<h2 class="cf-confirmation">Your Form Was Submitted Successfully.</h2>
+<h3 class="cf-expectations">We will contact you shortly. <span (click)="ngOnInit()" class="hoverCursor cerise">Click Here</span> to submit a new form.</h3>
+
+</span>
+
+</div>
+
+</div>
+
+
+<div class="col-lg-2">
+
+</div>
+</section>

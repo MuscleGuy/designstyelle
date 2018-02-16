@@ -6,7 +6,7 @@
 
 <div class="col col-lg-12 align-items-center page-title-container">
 
-  <svg class="svg-arrow-one" xmlns="http://www.w3.o" height="10" width="10"><polygon points="0,0 10,0 5,10" fill="none" stroke="#049cbf" stroke-width="1"></polygon></svg>
+  <svg class="svg-arrow-one" xmlns="http://www.w3.o" height="10" width="10"><polygon points="0,0 10,0 5,10" fill="none" stroke="#1187de" stroke-width="1"></polygon></svg>
   <svg class="svg-arrow-two" xmlns="http://www.w3.o" height="10" width="10"><polygon points="0,0 10,0 5,10" fill="none" stroke="#FFFFFF" stroke-width="1"></polygon></svg>
 
 <div class="page-title-text">
@@ -14,7 +14,7 @@
   <span class="page-title-ln2"> Sign Up. Request Work. Enjoy Success.</span></h1>
 </div>
 
-<svg class="svg-arrow-three" xmlns="http://www.w3.o" height="10" width="10"><polygon points="5,10 10,0, 0,0" fill="none" stroke="#049cbf" stroke-width="1"></polygon></svg>
+<svg class="svg-arrow-three" xmlns="http://www.w3.o" height="10" width="10"><polygon points="5,10 10,0, 0,0" fill="none" stroke="#1187de" stroke-width="1"></polygon></svg>
 
 </div><!--end page-title-->
 </div><!--end row-->
@@ -33,10 +33,9 @@
   <span class="block-title">Signup</span>
 <span class="block-subtitle"><strong class="cerise1">01</strong> Join our network </span>
 
-<span class="block-blurb">We understand that time is money for entreprenuers &amp; small business owners. Let us take the stress out of your day by bringing the customers <span class="cerise1">TO YOU</span>. Our proven marketing strategies will increase your bottom line exponentially as you focus on the most important aspects of your business. There's literally <span class="cerise1">ZERO</span> risk as we guarantee an increase in both visibility and customer base within 7 days. Don't put this off another minute; let's <a href="#" class="cerise1"><strong>get started today!</strong></a></span>
+<span class="block-blurb">We understand that time is money for entreprenuers &amp; small business owners. Let us take the stress out of your day by bringing the customers <span class="cerise1">TO YOU</span>. Our proven marketing strategies will increase your bottom line exponentially as you focus on the most important aspects of your business. There's literally <span class="cerise1">ZERO</span> risk as we guarantee an increase in both visibility and customer base within 7 days. Don't put this off another minute; let's <a href="/signup" class="cerise1"><strong>get started today!</strong></a></span>
 
 <p class="pay-disclosure">*FREE Domain and Premium Web Hosting</p>
-
 
 </div>
   </div>
@@ -48,8 +47,10 @@
   Monthly Pricing
 </p>
 
-<p class="pricing-number">
-  <sup>$</sup>299
+<!-- <p class="pricing-number" *ngFor="let price of prices | async"><sup>$</sup>{{price.marketing_package | number:'1.0-0'}}</p> -->
+
+<p class="pricing-number" *ngFor="let price of prices | async">
+  <sup>$</sup>{{price.core_package | number:'1.0-0'}}
 </p>
 
 <p class="pricing-term">
@@ -63,7 +64,7 @@ Cancel anytime - 100% satisfaction
 
 </p>
 
-    <div class="btn-container button-spacing"><a href="#" class="btn btn-normal">Sign Up Today!</a></div>
+    <div class="btn-container button-spacing"><a href="/signup" class="btn btn-normal">Sign Up Today!</a></div>
 
 </div>
 
@@ -84,7 +85,7 @@ Cancel anytime - 100% satisfaction
 <span class="block-subtitle"><strong class="cerise1">02</strong> Time to get busy </span>
 <span class="block-blurb">It's time to bump fists with your new shadow, a.k.a. your dedicated design team. We'll collaborate for days, weeks, or even months until we perfect your project. Moving forward, simply submit a request for additional work/edits and we'll respond within a few hours.</span>
 
-    <div class="btn-container button-spacing"><a href="#" class="btn btn-normal">Sign Up Today!</a><p class="pay-disclosure">*FREE Domain and Premium Web Hosting</p></div>
+    <div class="btn-container button-spacing"><a href="/signup" class="btn btn-normal">Sign Up Today!</a><p class="pay-disclosure">*FREE Domain and Premium Web Hosting</p></div>
 
 
 </div>
@@ -111,7 +112,7 @@ Cancel anytime - 100% satisfaction
 <span class="block-subtitle"><strong class="cerise1">02</strong> Next Steps...</span>
 <span class="block-blurb">Your project is delivered &amp; you're ready for business. We'll continue to manage your project from beginning to end while making strategic market decisions based upon real time statistics. Cancel Anytime. 100% satisfaction! Unlike our competitors, you retain the rights to your site.</span>
 
-    <div class="btn-container button-spacing"><a href="#" class="btn btn-normal">Sign Up Today!</a><p class="pay-disclosure">*FREE Domain and Premium Web Hosting</p></div>
+    <div class="btn-container button-spacing"><a href="/signup" class="btn btn-normal">Sign Up Today!</a><p class="pay-disclosure">*FREE Domain and Premium Web Hosting</p></div>
 
 
 </div>
@@ -132,7 +133,7 @@ Cancel anytime - 100% satisfaction
 <div class="col col-lg-12 pricing-column">
 
 <h2 class="hp-section-title cerise1 text-center">How We Stack Up To The <span>Competitors</span>
-<svg xmlns="http://www.w3.o" height="20" width="20"><polygon points="0,0 20,10 0,20" fill="#049cbf" stroke="#049cbf" stroke-width="1"></polygon></svg>
+<svg xmlns="http://www.w3.o" height="20" width="20"><polygon points="0,0 20,10 0,20" fill="#1187de" stroke="#1187de" stroke-width="1"></polygon></svg>
   </h2>
 
 

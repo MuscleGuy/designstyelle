@@ -1,5 +1,6 @@
-import {Component} from '@angular/core';
-
+import {Component, OnInit} from '@angular/core';
+import { AngularFirestore } from 'angularfire2/firestore';
+import { Observable } from 'rxjs/Observable';
 
 
 @Component({
@@ -10,8 +11,14 @@ templateUrl:'./home-page.component.html'
 
 export class HomePageComponent{
 
-onClick(){
-console.log('clicked')
-}
+
+  prices: Observable<any[]>;
+  constructor(private db: AngularFirestore) {
+  this.prices = db.collection('pricing').valueChanges();
+  }
+
+  ngOnInit(){
+
+  }
 
 }

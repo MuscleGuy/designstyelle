@@ -1,0 +1,24 @@
+<div *ngIf="items?.length > 0;">
+
+
+  <div *ngFor="let item of items">
+    <div class="portfolio-block col col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+      <span class="portfolio-img"><img src="./assets/img/portfolio/{{item.project_pic}}" /></span>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!--
+
+
+<div class="portfolio-block col col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+  <span class="portfolio-img"><img src="./assets/img/portfolio/alluafitnessproject1.jpg" /></span>
+  <span class="portfolio-title text-center">All U A Fitness Project</span>
+  <span class="portfolio-summary text-center">Project Summary</span>
+</div>
+
+
+-->

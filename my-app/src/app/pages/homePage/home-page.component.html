@@ -5,22 +5,22 @@
 <div class="row">
 <div class="col col-lg-12 align-items-center hero-text-container hero-text-container-home">
 
-<svg class="svg-arrow-one" xmlns="http://www.w3.o" height="10" width="10"><polygon points="0,0 10,0 5,10" fill="none" stroke="#049cbf" stroke-width="1"></polygon></svg>
+<svg class="svg-arrow-one" xmlns="http://www.w3.o" height="10" width="10"><polygon points="0,0 10,0 5,10" fill="none" stroke="#1187de" stroke-width="1"></polygon></svg>
 <svg class="svg-arrow-two" xmlns="http://www.w3.o" height="10" width="10"><polygon points="0,0 10,0 5,10" fill="none" stroke="#FFFFFF" stroke-width="1"></polygon></svg>
 
 <div class="hero-fg-text">
 <h1><span class="hero-fg-ln1">We design, build, test, <span class="cerise1">&amp;</span> market</span>
 <strong class="hero-fg-ln2">
 
-<svg xmlns="http://www.w3.o" height="30" width="30" class="hide-on-mobile"><polygon points="0,0 30,15 0,30" fill="#049cbf" stroke="#049cbf" stroke-width="1"></polygon></svg>
+<svg xmlns="http://www.w3.o" height="30" width="30" class="hide-on-mobile"><polygon points="0,0 30,15 0,30" fill="#1187de" stroke="#1187de" stroke-width="1"></polygon></svg>
 
 small business websites <span class="cerise1">&amp;</span> mobile applications.</strong></h1>
 </div>
 
-<svg class="svg-arrow-three" xmlns="http://www.w3.o" height="10" width="10"><polygon points="5,10 10,0, 0,0" fill="none" stroke="#049cbf" stroke-width="1"></polygon></svg>
+<svg class="svg-arrow-three" xmlns="http://www.w3.o" height="10" width="10"><polygon points="5,10 10,0, 0,0" fill="none" stroke="#1187de" stroke-width="1"></polygon></svg>
 
 <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-      <div class="btn-container portfolio-button-hp"><a href="/how-it-works" class="btn btn-default">Signup Today!</a></div>
+      <div class="btn-container portfolio-button-hp"><a href="/signup" class="btn btn-default">Signup Today!</a></div>
 
 </div>
 </div>
@@ -47,7 +47,7 @@ small business websites <span class="cerise1">&amp;</span> mobile applications.<
     <div class="col col-lg-6">
   <h2 class="hp-section-title cerise1">Recent <span>Projects</span>
 
-<svg xmlns="http://www.w3.o" height="20" width="20"><polygon points="0,0 20,10 0,20" fill="#049cbf" stroke="#049cbf" stroke-width="1"></polygon></svg>
+<svg xmlns="http://www.w3.o" height="20" width="20"><polygon points="0,0 20,10 0,20" fill="#1187de" stroke="#1187de" stroke-width="1"></polygon></svg>
 
     </h2>
   </div>
@@ -156,7 +156,7 @@ small business websites <span class="cerise1">&amp;</span> mobile applications.<
 <div class="col col-lg-12">
 
 <h2 class="hp-section-title cerise1 text-center">How It <span>Works</span>
-<svg xmlns="http://www.w3.o" height="20" width="20"><polygon points="0,0 20,10 0,20" fill="#049cbf" stroke="#049cbf" stroke-width="1"></polygon></svg>
+<svg xmlns="http://www.w3.o" height="20" width="20"><polygon points="0,0 20,10 0,20" fill="#1187de" stroke="#1187de" stroke-width="1"></polygon></svg>
 
 
   </h2>
@@ -211,7 +211,7 @@ Finally, we design, build, test, and market your project. Adjustments are made t
 <div class="col col-lg-12">
 
 <h2 class="hp-section-title cerise1">All-In-One <span>Solution</span>
-<svg xmlns="http://www.w3.o" height="20" width="20"><polygon points="0,0 20,10 0,20" fill="#049cbf" stroke="#049cbf" stroke-width="1"></polygon></svg>
+<svg xmlns="http://www.w3.o" height="20" width="20"><polygon points="0,0 20,10 0,20" fill="#1187de" stroke="#1187de" stroke-width="1"></polygon></svg>
 
   </h2>
 
@@ -267,7 +267,8 @@ The Core Package includes Unlimited Web Design, Unlimited Graphic Design, and Di
 <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-4 pricing-border-hp">
 
 <p class="pricing-title">Monthly Pricing</p>
-<p class="pricing-number"><sup>$</sup>349</p>
+<p class="pricing-number" *ngFor="let price of prices | async"><sup>$</sup>{{price.core_package | number:'1.0-0'}}</p>
+
 <p class="pricing-term">Core Package: <span class="pricing-term-desc">What you need to get started</span></p>
 
 <div class="pricing-includes"><ul class="text-left">
@@ -280,14 +281,14 @@ The Core Package includes Unlimited Web Design, Unlimited Graphic Design, and Di
 </ul></div>
 
 <p class="pricing-disclosure">Cancel anytime - 100% satisfaction <span>Web Design &amp; Graphic Design include unlimited revisions</span></p>
-<div class="btn-container"><a href="" class="btn btn-normal">Select Core Package </a></div>
+<div class="btn-container"><a href="/signup" class="btn btn-normal">Select Core Package </a></div>
 <!-- <div class="btn-container"><a href="/solutions" class="btn btn-normal">Select Core Package</a></div> -->
 </div>
 
 <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-4 pricing-border-hp">
 
 <p class="pricing-title">Monthly Pricing</p>
-<p class="pricing-number"><sup>$</sup>999</p>
+<p class="pricing-number" *ngFor="let price of prices | async"><sup>$</sup>{{price.marketing_package | number:'1.0-0'}}</p>
 <p class="pricing-term">Marketing Package: <span class="pricing-term-desc">Ready to seriously sell?</span></p>
 
 <div class="pricing-includes"><ul class="text-left">
@@ -301,14 +302,14 @@ The Core Package includes Unlimited Web Design, Unlimited Graphic Design, and Di
 
 
 <p class="pricing-disclosure">Cancel anytime - 100% satisfaction <span>Core Package Features included.</span></p>
-<div class="btn-container"><a href="/solutions" class="btn btn-normal">Select Marketing Package</a></div>
+<div class="btn-container"><a href="/signup" class="btn btn-normal">Select Marketing Package</a></div>
 
 </div>
 
 
 <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-4 text-center monthly-pricing">
 <p class="pricing-title">Monthly Pricing</p>
-<p class="pricing-number"><sup>$</sup>1,999</p>
+<p class="pricing-number" *ngFor="let price of prices | async"><sup>$</sup>{{price.media_package | number:'1.0-0'}}</p>
 <p class="pricing-term">Media Package: <span class="pricing-term-desc">Reach a national audience</span></p>
 
 <div class="pricing-includes"><ul class="text-left">
@@ -323,7 +324,7 @@ The Core Package includes Unlimited Web Design, Unlimited Graphic Design, and Di
 
 
 <p class="pricing-disclosure">Cancel anytime - 100% satisfaction <span>Marketing Package Features included.</span></p>
-<div class="btn-container"><a href="/solutions" class="btn btn-normal">Select Media Package</a></div>
+<div class="btn-container"><a href="/signup" class="btn btn-normal">Select Media Package</a></div>
 </div>
 </div>
 
@@ -336,7 +337,7 @@ The Core Package includes Unlimited Web Design, Unlimited Graphic Design, and Di
 <div class="row cta-blocks-header">
   <div class="col col-lg-12 cta-header-padding">
 
-    <h2 class="hp-section-title cerise1 text-center">We Take On Your Project and<span> OWN IT!</span> <svg xmlns="http://www.w3.o" height="20" width="20"><polygon points="0,0 20,10 0,20" fill="#049cbf" stroke="#049cbf" stroke-width="1"></polygon></svg>
+    <h2 class="hp-section-title cerise1 text-center">We Take On Your Project and<span> OWN IT!</span> <svg xmlns="http://www.w3.o" height="20" width="20"><polygon points="0,0 20,10 0,20" fill="#1187de" stroke="#1187de" stroke-width="1"></polygon></svg>
 
       </h2>
 
@@ -429,7 +430,7 @@ Being innovative = keeping up with the current needs of your target audience in 
   <div class="row clients-row-hp">
   <div class="col col-lg-12">
 
-<h2 class="hp-section-title cerise1 text-center">Super Happy <span>Clients</span> <svg xmlns="http://www.w3.o" height="20" width="20"><polygon points="0,0 20,10 0,20" fill="#049cbf" stroke="#049cbf" stroke-width="1"></polygon></svg>
+<h2 class="hp-section-title cerise1 text-center">Super Happy <span>Clients</span> <svg xmlns="http://www.w3.o" height="20" width="20"><polygon points="0,0 20,10 0,20" fill="#1187de" stroke="#1187de" stroke-width="1"></polygon></svg>
   </h2>
   </div>
 
@@ -450,7 +451,7 @@ Being innovative = keeping up with the current needs of your target audience in 
 <div class="row clientsButton">
 <div class="col col-lg-12">
 <div class="text-center">
-    <div class="btn-container"><a href="#" class="btn btn-normal">Get Started Today!</a><p class="pay-disclosure white">*FREE Domain and Premium Web Hosting</p></div>
+    <div class="btn-container"><a href="/signup" class="btn btn-normal">Get Started Today!</a><p class="pay-disclosure white">*FREE Domain and Premium Web Hosting</p></div>
 
 </div>
 </div>
@@ -463,7 +464,7 @@ Being innovative = keeping up with the current needs of your target audience in 
 <div class="row team-member-bio-row">
 
 <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
-<h2 class="hp-section-title cerise1">Our <span>Team</span> <svg xmlns="http://www.w3.o" height="20" width="20"><polygon points="0,0 20,10 0,20" fill="#049cbf" stroke="#049cbf" stroke-width="1"></polygon></svg><span class="team-subtitle">Click Each Team Member To Learn More About Their Specialty</span></h2>
+<h2 class="hp-section-title cerise1">Our <span>Team</span> <svg xmlns="http://www.w3.o" height="20" width="20"><polygon points="0,0 20,10 0,20" fill="#1187de" stroke="#1187de" stroke-width="1"></polygon></svg><span class="team-subtitle">Click Each Team Member To Learn More About Their Specialty</span></h2>
 
 </div>
 

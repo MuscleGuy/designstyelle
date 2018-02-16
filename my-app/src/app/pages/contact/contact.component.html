@@ -36,7 +36,7 @@
 
 <p>Fill out the form and hit submit. You'd be surprised how fast we respond.</p>
 
-<p>Need answers to common questions? Check out the FAQs page. Follow us on the most popular social media platforms.</p>
+<p>Need answers to common questions? Check out the <a href="#">FAQs</a>. Follow us on the most popular social media platforms.</p>
 
 <ul class="social-media-contact-pg">
 <li><a href="https://facebook.com"><i class="fa fa-facebook"></i></a></li>
@@ -51,11 +51,15 @@
 
 <div class="col-lg-9">
 
-<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" id="contact-form">
-<fieldset class="flex-container flex-form">
-<div class="form-group flex-container"><label for="">Name</label><input type="text" name="name" class="" placeholder="John Doe" formControlName="name" required/></div>
-<div class="form-group flex-container"><label for="">Email</label><input type="email" name="email" class="" placeholder="email@email.com" formControlName="email" required/></div>
-<div class="form-group flex-container"><label for="">Phone</label><input type="tel" name="phone" class="" placeholder="1234567890" formControlName="phone"/></div>
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" *ngIf="showContactForm" id="contact-form">
+<fieldset class="form-group">
+<table id="contact-form-table">
+  <tr>
+    <td><label for="">Name</label><input type="text" name="name" class="" placeholder="Enter Your Full Name" formControlName="name" required/></td>
+    <td><label for="">Email</label><input type="email" name="email" class="" placeholder="email@email.com" formControlName="email" required/></td>
+    <td><label for="">Phone</label><input type="tel" name="phone" class="" placeholder="(123) 456-7890 or 1234567890" formControlName="phone"/></td>
+  </tr>
+</table>
 </fieldset>
 
 <fieldset class="form-group">
@@ -63,11 +67,19 @@
 </fieldset>
 
 <fieldset>
-  <button type="submit" class="btn btn-normal" [disabled]="!form.valid">Submit</button>
+  <button type="submit" class="btn btn-normal" [disabled]="!form.valid">Submit Form</button>
 </fieldset>
 
 <div *ngIf="form.controls.name.errors?.pattern">Name is invalid</div>
 </form>
+
+<span class="confirmationMessage" *ngIf="showConfirmationMessage">
+
+<h1 class="cf-thank-title">Thank you for contacting <strong class="cerise">Design Styelle!</strong></h1>
+<h2 class="cf-confirmation">Your Form Was Submitted Successfully.</h2>
+<h3 class="cf-expectations">We will contact you shortly. <span (click)="ngOnInit()" class="hoverCursor cerise">Click Here</span> to submit a new form.</h3>
+
+</span>
 
 </div>
 

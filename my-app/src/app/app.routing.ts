@@ -8,9 +8,11 @@ import {MarketingComponent} from './pages/marketing/marketing.component';
 import {ProductComponent} from './pages/product/product.component';
 import {DevelopmentComponent} from './pages/development/development.component';
 import {BrandingComponent} from './pages/branding/branding.component';
+import {SignupComponent} from './pages/signup/signup.component';
 
 
 const appRoutes: Routes = [
+{path:'signup', component:SignupComponent},
 {path:'branding', component:BrandingComponent},
 {path:'development', component:DevelopmentComponent},
 {path:'product', component:ProductComponent},

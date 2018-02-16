@@ -1,4 +1,6 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import { AngularFirestore } from 'angularfire2/firestore';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
 
@@ -7,4 +9,15 @@ templateUrl:'branding.component.html'
 
 })
 
-export class BrandingComponent{}
+export class BrandingComponent{
+
+  prices: Observable<any[]>;
+  constructor(private db: AngularFirestore) {
+  this.prices = db.collection('pricing').valueChanges();
+  }
+
+  ngOnInit(){
+
+  }
+
+}

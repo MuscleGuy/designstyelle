@@ -26,6 +26,8 @@ import { PortfolioItemsComponent } from './components/portfolio-items/portfolio-
 
 import { PortfolioService } from './services/portfolio.service';
 import { SignupFormComponent } from './components/signup-form/signup-form.component';
+import { LoginComponent } from './pages/login/login.component';
+import { MembersComponent } from './pages/members/members.component';
 
 var config = {
 firebase: {
@@ -39,7 +41,7 @@ firebase: {
 
 @NgModule({
   declarations: [
-    AppComponent,SolutionsComponent,HowItWorksComponent,HomePageComponent,SignupComponent,ContactComponent,PortfolioComponent,MarketingComponent,BrandingComponent,DevelopmentComponent,ProductComponent,TopHeaderComponent,AppFooterBlockComponent, PortfolioItemsComponent, SignupFormComponent
+    AppComponent,SolutionsComponent,HowItWorksComponent,HomePageComponent,SignupComponent,ContactComponent,PortfolioComponent,MarketingComponent,BrandingComponent,DevelopmentComponent,ProductComponent,TopHeaderComponent,AppFooterBlockComponent, PortfolioItemsComponent, SignupFormComponent, LoginComponent, MembersComponent
   ],
   imports: [
     BrowserModule,AngularFireModule.initializeApp(config.firebase, 'my-app'),AngularFirestoreModule,AngularFireAuthModule,routing,ReactiveFormsModule

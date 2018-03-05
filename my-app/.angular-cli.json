@@ -19,9 +19,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css", "../bower_components/font-awesome/css/font-awesome.min.css", "../bower_components/bootstrap/dist/css/bootstrap.min.css", "../bower_components/magnific-popup/dist/magnific-popup.css", "../bower_components/paginationjs/dist/pagination.css"
+        "../node_modules/featherlight/src/featherlight.gallery.css",
+        "../bower_components/font-awesome/css/font-awesome.min.css",
+        "styles.css"
       ],
-      "scripts": ["../bower_components/jquery/dist/jquery.min.js", "scripts/scripts.js", "../bower_components/bootstrap/dist/js/bootstrap.min.js", "../bower_components/magnific-popup/dist/jquery.magnific-popup.min.js", "../bower_components/jquery.easing/js/jquery.easing.min.js", "../bower_components/paginationjs/dist/pagination.min.js"],
+      "scripts": [
+        "../node_modules/featherlight/src/featherlight.gallery.js",
+        "scripts/scripts.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

@@ -24,7 +24,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1; zoom:1; width: 100vw;;
 }
 ol, ul {
 	list-style: none;
@@ -88,7 +88,7 @@ a:hover{color: #812551; text-decoration: none;}
 strong{font-family: Avenir-Medium;}
 em{font-style: italic;}
 
-.hp-section-title{font-family: Avenir-UltraLight; font-size: 2.5em;}
+.hp-section-title{font-family: Avenir-UltraLight; font-size: 2.5em; margin-bottom: 20px;}
 .hp-section-title span{font-family: Avenir-Black;}
 .hp-section-subtitle{line-height: 1.4em; font-size: 1.3em;}
 .hp-section-subtitle span{}
@@ -98,7 +98,7 @@ em{font-style: italic;}
 span.block-title, span.block-subtitle, span.block-blurb{display: block; clear: both;}
 .block-title{font-family:Avenir-Black ; color:#c9c9c9 ; font-size: 4em; line-height: 1em; opacity: .7;}
 .block-subtitle{font-family:Avenir-Black ; color:# 000; font-size: 2.5em;}
-.block-blurb{font-family:Avenir-Light; color:#555 ; font-size: 1.15em; margin: 15px 0 0;}
+.block-blurb{font-family:Avenir-Light; color:#555 ; margin: 15px 0 0;}
 
 /*FORMS*/
 textarea{width: 100%;}
@@ -114,7 +114,7 @@ button:disabled{background-color:gray !important;}*/
 /*div.btn-container:hover a.btn-default{}*/
 div.btn-container:hover a.btn-default,div.btn-container:hover a.btn-normal {color:#1187de !important; background-color: #fff !important; border:1px solid #1187de !important; cursor: pointer; -webkit-transition: background-color .5s; -ms-transition: background-color .5s; -o-transition: background-color .5s; transition: background-color .5s; -webkit-transition: color .3s; -ms-transition: color .3s; -o-transition: color .3s; transition: color .3s;}
 .pay-disclosure{font-style: italic; padding: 1em 0; font-size: .8em;}
-.button-spacing{padding:1em 0;}
+.button-spacing{padding:1em 0; margin: 1em 0;}
 
 
 header#header{background-color:#111; z-index: 9999;}
@@ -132,6 +132,10 @@ nav#mainNav ul li a{text-decoration: none; color:#FFF; font-family: Avenir-Ultra
 nav#mainNav ul li:not(.contact-link):hover a {border-bottom: 1px solid #1187de; padding-bottom: 8px;}
 li a.mail-icon-circle i{background-color: #1187de; padding: 10px; border-radius: 20px; border:1px solid #1187de;}
 li a.mail-icon-circle:hover i{background-color: #FFF; color:#1187de; transition: background-color .5s; -webkit-transition: background-color .5s; -ms-transition: background-color .5s; transition: color .5s; -webkit-transition: color .5s; -ms-transition: color .5s;}
+
+/*GENERAL STYLING*/
+.block-blurb{font-family: Avenir-light; line-height:1.4em; font-size:1.3em;}
+
 
 /*STYLING FOR THE MAIN NAVIGATION ON MOBILE*/
 #menubars{display: none;}
@@ -184,11 +188,15 @@ figcaption.project-details span{display: block; clear:both;}
 
 /*HOW IT WORKS*/
 #how-it-works-container{padding-top: 55px; padding-bottom: 55px;}
-.hiw-content-block{border: 1px solid rgba(51,51,51,.2); padding: 3em 1.5em 3.5em; text-align: center; min-height: 225px; max-height: 250px; overflow: hidden;}
+.hiw-content-block{border: 1px solid rgba(51,51,51,.2); padding: 2em 1.5em 3.5em; text-align: center; min-height: 225px; max-height: 250px; overflow: hidden; border-radius: 5px;}
+.hiw-content-block:hover{background-color:#1187de; transition: background-color .5s; color:#FFF;	}
 .hiw-content-block a{color:#1187de;}
-.hiw-content-block a:hover{text-decoration: none;}
+.hiw-content-block:hover a{text-decoration: none; color: #FFF;}
+.hiw-content-block:hover .cerise1{text-decoration: none; color: #FFF;}
 .hiw-content-row{margin: 2em 0 0;}
-.hiw-content-title{font-family: Avenir;}
+.hiw-content-title{font-family: Avenir; margin-bottom: 8px;}
+.hiw-cta{margin-top: 20px;}
+.hiw-content-block:hover  .hiw-cta a{border: 1px solid #FFF; padding: 6px 20px;}
 .pricing-plan-hp{margin: 2em 0 0}
 .pricing-row-hp{border: 1px solid rgba(51,51,51,.2); padding: 3em 1em 2em; margin-left: 1em; margin-right: 1em}
 .pricing-desc-title{font-size: 2em; font-family: Avenir}
@@ -198,7 +206,8 @@ figcaption.project-details span{display: block; clear:both;}
 .pricing-number{color:#1187de; font-family: Avenir-Black; font-size: 7em; line-height: 1em;}
 .pricing-number sup{font-size: .5em;}
 .pricing-term{color:#1187de; font-family: Avenir-Black; font-size: 2em; line-height: 1.35em !important;}
-.pricing-term-desc{}
+.pricing-term-desc{display: block; font-size: .8em; margin-bottom: 10px;}
+.pricing-disclosure{margin-top: 8px;}
 .pricing-disclosure span,.pricing-disclosure{font-size: .9em; text-align: center; font-family: Avenir-UltraLight;}
 .pricing-disclosure span{display: block;}
 .pricing-border-hp{border-right: 1px solid #1187de;}
@@ -208,19 +217,19 @@ figcaption.project-details span{display: block; clear:both;}
 .cta-blocks-header{margin-bottom: 35px; padding-left: 10%; padding-right: 10%;}
 .cta-blocks-wrapper{background: url('./assets/img/homepage/cta-blocks-bg.jpg') no-repeat center center; background-size: cover;}
 /*.cta-blocks{display:-webkit-flex; display: -ms-flexbox; display: flex; overflow: hidden; align-items: top; align-content: center; justify-content: center;}*/
-.cta-blocks{padding-left:25px; padding-right: 25px;}
-.cta-blocks .col-lg-3{padding-right: 2.5px; padding-left: 2.5px;}
-.cta-block{margin-bottom: 2.5px; height: 360px; overflow: hidden; position: relative;}
+.cta-blocks{padding-left:25px; padding-right: 25px; height: 100%;}
+.cta-blocks .col-lg-3{padding-right: 2.5px; padding-left: 2.5px; height: 100%;}
+.cta-block{margin-bottom: 2.5px; height: 360px; overflow: hidden; position: relative; display: flex; align-items: center; align-content: center;}
 .cta-block .overlay-content{position: absolute; top:0; left:0; background-color:rgba(0,0,162,.9); width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; font-family: Avenir-Ultralight !important; font-size: 1.1em; display: none;}
 .overlay-content-padding{padding: 5%;}
 .overlay-content-white{color:#fff;}
 .overlay-content-white a{color:#fff;}
-.cta-block-content{padding: 2em 1em 3em; width: 100%; height: 100%; min-height: 280px; }
+.cta-block-content{padding-top: 80px; padding-bottom: 80px; padding-left: 1em; padding-right: 1em; width: 100%; height: 100%; min-height: 380px;}
 .cta-type-blog{text-align: center;}
 .cta-type-blog1{background-color: #78244c; color: #FFF;}
 .cta-type-blog2{background-color: #e07401; color: #FFF;}
 /*.cta-type-blog3{background-color: #78244c; color: #FFF;}*/
-.cta-blog-title{font-family: Avenir-Heavy;}
+.cta-blog-title{font-family: Avenir-Heavy; line-height: 1.3em; margin-bottom: 10px;}
 .cta-blog-blurb{font-family: Avenir-UltraLight;}
 .cta-blog-button{margin-top:2em;}
 .cta-blog-button a{border:1px solid #FFF; padding:.6em 2em; background-color: none; color: #FFF; }
@@ -278,7 +287,7 @@ figcaption.project-details span{display: block; clear:both;}
 /*.step-three-hiw{background-color: #0f0f0f;}*/
 /*PRICING TABLE*/
 .pricing-column{padding: 30px 10%;}
-.pricing-table-wrapper{border: 1px solid rgba(51,51,51,.2); padding: 0px 20px;}
+.pricing-table-wrapper{border: 1px solid rgba(51,51,51,.2); padding: 0px 20px; margin-top: 30px;}
 .pricing-table{width: 100%;}
 .pricing-table thead td{font-family: Avenir-Heavy;}
 .pricing-table td{padding: 1em; vertical-align: middle; text-align: center; border-bottom:1px solid rgba(51,51,51,.1); }
@@ -305,6 +314,7 @@ figcaption.project-details span{display: block; clear:both;}
 .step-two-sol .block-blurb, .step-two-sol .block-title, .step-two-sol .block-subtitle, .step-two-sol .pay-disclosure {color:#FFF;}
 .step-three-sol .block-blurb, .step-three-sol .block-title, .step-three-sol .block-subtitle, .step-three-sol .pay-disclosure {color:#FFF;}
 .step-three-sol,.step-three-divider1{background-color: #191919;}
+.step-three-sol{padding:0 3em;}
 /*.step-three-sol .col{padding:10% 5%;}*/
 .step-one-sol{margin:10em auto;}
 .step-one-sol .block-subtitle{color: #aaa;}
@@ -324,17 +334,32 @@ figcaption.project-details span{display: block; clear:both;}
 .portfolio-selection li.active a{color:#FFF;}
 .portfolio-selection a{text-decoration: none; color: #333;}
 .portfolio-selection li:hover a{text-decoration: none; color: #fff;}*/
-.portfolio-block{margin-bottom: 50px;}
+#gallery-wrapper{padding-top: 55px;}
+.portfolio-block{margin-bottom: 50px;  max-height: 300px; width: auto; position: relative;}
+.portfolio-hover{position: absolute; background-color: rgba(17, 135, 222, .95); color: #f1f1f1; top:0px; left:0px; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; align-content: center; opacity: 0;}
+#portfolio-hover-content{display: block; padding: 3%;}
+.portfolio-block:hover .portfolio-hover {opacity:1; transition: opacity .5s;}
+/*.portfolio-hover-content{display:none;}*/
+.hide-portfolio-hover-content{display: none !important;}
+.portfolio-hover-content{display: block !important;}
+
+.portfolio-title{text-align: center; display: block; font-size: 1.3em; font-family: Avenir-Medium; margin: 10px 0;}
+.portfolio-summary{text-align: center; display: block; font-family: Avenir-UltraLight; padding-bottom: 1em;}
+.portfolio-icons{display: flex; align-items: center; justify-content: center; align-content: center;}
+.portfolio-icons i, .portfolio-icons a i{color: #f1f1f1;}
+.portfolio-icons a{padding:0 10px;}
+
+.portfolio-similar{color: #FFF; text-align: center; padding-top:17px;}
+.portfolio-similar a{color: #FFF;}
 /*.portfolio-block .col, .portfolio-block .col-lg-4, .portfolio-block .col-md-6, .portfolio-block .col-sm-12, .portfolio .col-xs-12{padding-left:0px !important; padding-right:0px !important }*/
-.portfolio-img img{display: block; max-height: 300px; width: auto;}
-.portfolio-title{display: block; font-size: 1.3em; font-family: Avenir-Medium; margin: 10px 0;}
-.portfolio-summary{display: block; font-family: Avenir-UltraLight; padding-bottom: 1em;}
+/*.portfolio-img img{display: block; }*/
+/*
 .portfolio-date{display: block; margin: 10px 0; font-family: Avenir-UltraLight;}
 .portfolio-category{display: block; font-size: .8em; font-style: italic;}
 .portfolio-details-wrapper{background: #1187de; background:linear-gradient(#1187de,#07b1d8,#0687a4); color: #FFF; padding: 1em; border-top: 1px solid #401228;}
 .portfolio-details-wrapper a{text-decoration: none; color: #FFF;}
 .portfolio-details-wrapper:hover a{text-decoration: none; color: #FFF;}
-.portfolio-summary strong, .portfolio-date strong{font-family: Avenir-Heavy;}
+.portfolio-summary strong, .portfolio-date strong{font-family: Avenir-Heavy;}*/
 .portfolio .row{margin-bottom: 20px;}
 
 .graphicsPortfolio .portfolio-block{height:120px; width: 180px;}
@@ -355,7 +380,6 @@ figcaption.project-details span{display: block; clear:both;}
 .cf-thank-title{font-size: 1.}
 .cf-confirmation{}
 .cf-expectations{}
-
 .social-media-contact-pg{clear: both; margin: 5% 0;}
 .social-media-contact-pg li{display: inline-block; padding: 0 4%;}
 .social-media-contact-pg li:first-of-type{padding-left: 0px;}
@@ -364,6 +388,30 @@ figcaption.project-details span{display: block; clear:both;}
 .social-media-contact-pg i:hover{opacity: 1;}
 .social-features{margin:5% 0%;}
 .social-features li{padding-bottom: 10px;}
+
+/*LOGIN PAGE*/
+#login-section{padding: 55px 0;}
+#login-section input:first-of-type{margin-bottom: 20px;}
+#login-section input{min-height: 50px; width: 100%; max-width: 330px; margin: auto; display: block; clear: both; padding-left: 8px;}
+#login-section h2{margin-bottom: 30px;}
+#login-form{width:70%; margin: auto;}
+#login-form fieldset{margin-bottom: 20px;}
+#login-form-table{width:100%;}
+#login-form-table td{width: 50%; padding-right:15px;}
+#login-form-table td:last-of-type{padding-right:0px;}
+.other-login-options{display: block; clear: both; margin:20px;}
+#other-login-options-table{width: 100%;}
+
+/*MEMBER PAGE*/
+#member-section{padding: 55px 0;}
+#member-section input{min-height: 43px; width: 100%; padding-left: 8px;}
+#member-section label{padding-right: 10px;}
+#member-form fieldset{margin-bottom: 20px;}
+#member-form textarea{min-height: 200px;}
+#member-form-table{width:100%;}
+#member-form-table td{width: 33%; padding-right:15px;}
+#member-form-table td:last-of-type{padding-right:0px;}
+
 /*MARKETING PAGE*/
 #marketing-section{padding-top:55px;}
 .social.team-social{margin: 2% 0;}
@@ -500,7 +548,7 @@ figure.project-pic{max-height: 320px;}
 .pricing-sol{border:none;}
 .block-subtitle{font-size: 1.5em;}
 
-.block-blurb{font-family: Avenir-Ultralight;}
+.block-blurb{font-family: Avenir-Ultralight; line-height:1.5em}
 .step-three-sol .col{padding: 5em 1em 5em 1em;}
 .seo-table td{font-size: .85em;}
 .seo-table i{display: none;}

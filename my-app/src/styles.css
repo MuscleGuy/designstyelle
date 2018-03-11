@@ -65,7 +65,7 @@ table {
 body{background: #fdfdfe;}
 
 *,p,div,main,header,footer,li,ol,ul,table,td,tr,thead,tfoot,details,summary,blockquote,section,input,select,optgroup,option,a,aside,address,cite,span{font-family: Avenir; font-size:1em}
-p,li,ol,ul,td,tr,thead,tfoot,details,summary,blockquote,section,input,select,optgroup,option,a,address,cite,span{line-height: 1.35em;}
+p,li,ol,ul,td,tr,thead,tfoot,details,summary,blockquote,section,input,select,optgroup,option,a,address,cite,span{line-height: 1.35em; padding-bottom: 15px;}
 img{max-width: 100%; width: 100%; height: auto; overflow: hidden;}
 /*FLEX*/
 .row-eq-height, .flex-container,.step-flex-container {display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;}
@@ -162,7 +162,7 @@ li a.mail-icon-circle:hover i{background-color: #FFF; color:#1187de; transition:
 .svg-arrow-two{position: absolute; top:100px; right:200px;}
 .svg-arrow-three{position: absolute; bottom:100px; right:300px;}
 
-.page-title-container{padding:7% 0 10%; background-color: #111;}
+.page-title-container{padding:7% 0 2%; background-color: #111;}
 .page-title-text{text-align: center;}
 .page-title-text h1{color:#FFF; font-size:3.5em; line-height:1.3em;}
 .page-title-text .leftArrow{padding-right: 15px;}
@@ -182,7 +182,8 @@ figcaption.project-details span{display: block; clear:both;}
 .project-title, .project-subject{text-shadow: 0px 0px 15px #444;}
 .project-title{font-family: Avenir-Heavy; color: #FFF; font-size: 1em; padding-top: 10px;}
 .project-subject{font-family: Avenir-Light; color: #FFF; opacity:.5;}
-.portfolio-button-hp{clear: both; float: none; padding-top: 3%;}
+.signup-button{clear: both; float: none; padding-top: 3%; padding-bottom:5%;}
+.portfolio-button-hp{}
 .portfolio-button-hp a{position: relative !important;}
 .portfolio-button-hp:after,.portfolio-button-hp:before{content: ''; display: table;}
 
@@ -197,6 +198,8 @@ figcaption.project-details span{display: block; clear:both;}
 .hiw-content-title{font-family: Avenir; margin-bottom: 8px;}
 .hiw-cta{margin-top: 20px;}
 .hiw-content-block:hover  .hiw-cta a{border: 1px solid #FFF; padding: 6px 20px;}
+
+/*PRICING*/
 .pricing-plan-hp{margin: 2em 0 0}
 .pricing-row-hp{border: 1px solid rgba(51,51,51,.2); padding: 3em 1em 2em; margin-left: 1em; margin-right: 1em}
 .pricing-desc-title{font-size: 2em; font-family: Avenir}
@@ -212,6 +215,10 @@ figcaption.project-details span{display: block; clear:both;}
 .pricing-disclosure span{display: block;}
 .pricing-border-hp{border-right: 1px solid #1187de;}
 .pricing-includes{display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; align-items: center; justify-content: center;}
+#pricing-divider {display: none;}
+.pricing-divider-top{opacity: .2;}
+.pricing-divider-bottom{}
+
 /*CTA BLOCKS*/
 #cta-blocks-hp{padding-top: 5%; padding-bottom: 10%;}
 .cta-blocks-header{margin-bottom: 35px; padding-left: 10%; padding-right: 10%;}
@@ -325,6 +332,12 @@ figcaption.project-details span{display: block; clear:both;}
 .seo-table td{vertical-align: middle; font-family: Avenir-Medium; padding: .5em .7em; width: 50%;}
 .seo-tools-img{width:90%; height: auto;}
 .strike{text-decoration: line-through;}
+.solutions-marketing-cloud{max-width:500px; height: auto;}
+
+
+
+
+
 /*PORTFOLIO*/
 .portfolio{padding-top:4%; padding-bottom: 4%; }
 /*.portfolio-selection{margin:4% auto; width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; align-items: center; justify-content: center; text-align: center;}
@@ -374,7 +387,7 @@ figcaption.project-details span{display: block; clear:both;}
 #contact-form fieldset{margin-bottom: 20px;}
 #contact-form textarea{min-height: 200px;}
 #contact-form-table{width:100%;}
-#contact-form-table td{width: 33%; padding-right:15px;}
+#contact-form-table td{width: 33%; padding-right:15px; vertical-align: middle;}
 #contact-form-table td:last-of-type{padding-right:0px;}
 .confirmationMessage{text-align: center;}
 .cf-thank-title{font-size: 1.}
@@ -503,7 +516,8 @@ figure.project-pic{max-height: 320px;}
 .project-details{display: none;}
 .hp-section-title{text-align: center; font-size: 2em;}
 .hp-section-subtitle{font-size: 1.2em;}
-.hiw-content-block {padding: 1.5em 1em 1.5em; min-height:0px; margin: 20px 10%;}
+.hiw-content-block {padding: 1.5em 1em 1.5em; min-height:0px; margin: 20px 0%;}
+.hiw-content-row .col{padding-right: 0px;}
 /*.hiw-content-title{font-size: 1em;}*/
 .cta-blocks .hide-on-mobile{display: block;}
 .client-logos-inline img{max-width: 120px;}
@@ -553,13 +567,46 @@ figure.project-pic{max-height: 320px;}
 .seo-table td{font-size: .85em;}
 .seo-table i{display: none;}
 }
+
+
+
+
+
+
 /*Samsung Galaxy Note 5,LG G5,One Plus 3 480x853*/
 @media screen and (max-width:480px) {
 #hero {height: 90vh; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; align-items:center;; justify-content: center; clip-path:none;}
+.page-hero{padding: 20% 5% 3%;}
 .hero-text-container-home{background: none; background-image: none;}
-.hero-text-container{padding: 20% 0 3%;}
+.hero-text-container{padding: 20% 5% 3%;}
 .hero-fg-ln1,.hero-fg-ln2{font-size: .65em; font-family: Avenir-UltraLight; display:inline;}
-.hero-fg-text h1{line-height: .8em !important; margin-top:-30px;}
+.hero-fg-text h1{line-height: .8em !important; margin-top:-30px; font-size: 3.5em;}
+.portfolio-button-hp{margin-top: 30px;}
+#portfolio-hover, .portfolio-hover{display: none !important;}
+
+.portfolio-block{max-height: none;}
+
+.hiw-content-block{max-height: 265px;}
+.pricing-hiw{background-color:#1187de; color:#FFF !important; margin-bottom:0px; margin-top: 60px;}
+.pricing-hiw a, .pricing-hiw .pricing-number, x.pricing-hiw .pricing-term, .pricing-hiw .pricing-disclosure{color:#FFF !important;}
+.pricing-hiw  .btn-normal{border:1px solid #FFF !important;}
+.step-one-sol .button-spacing{text-align: center;}
+.step-three-sol,.step-two-sol .col, .step-one-sol{padding-left:25px; padding-right: 25px;}
+
+.pricing-block{}
+.pricing-block1{}
+.pricing-block2{margin-top:40px;}
+.pricing-block3{}
+.hiw-cta{padding-bottom: 10px; padding-top: 30px;}
+.hiw-content-title{margin-bottom: 22px;}
+#pricing-divider{display: block;}
+.pricing-block2 .btn{margin-left: -15px;}
+.pricing-block1 .pricing-number, .pricing-block2 .pricing-number{margin-left: -10px;}
+.pricing-block3 .pricing-number{margin-left: -35px;}
+.hiw-content-title{font-size: 1.15em;}
+.step-one-hiw{margin-bottom: 0px;}
+.step-two-hiw{margin-top: 0px;}
+.step-two-hiw .col:nth-child(2){margin-top: 0px;}
 .step-dividers{display: none !important;}
 .recent-projects{padding-top: 10%;}
 .pricing-container{display: none;}
@@ -569,10 +616,16 @@ figure.project-pic{max-height: 320px;}
 .solutions-service1{}
 .solutions-service1 .col:nth-child(2){margin-top: 0px;}
 .solutions-service1 .col{padding-top: 5em; padding-bottom: 5em;}
-.project-details-4-container,.project-details-5-container,.project-details-6-container{display: none;}
+.our-team-jess, .our-team-ebonee, .our-team-frank{display: none;}
+/*.project-details-4-container,.project-details-5-container,.project-details-6-container{display: none;}*/
 .pricing-row-hp{border:none;}
 .pay-disclosure{display: none;}
-#how-it-works-container{padding-bottom: 0px;}
+#how-it-works-container{padding-bottom: 0px; padding-left:25px; padding-right: 25px;}
+#contact-form{padding-top: 35px;}
+#contact-section{padding-left:25px; padding-right: 25px;}
+.social-media-contact-pg{display: none;}
+#contact-form-table td{display: block; padding-bottom: 30px; width: 100%;}
+#contact-section label{padding-bottom: 10px;}
 }
 
 
@@ -584,7 +637,6 @@ figure.project-pic{max-height: 320px;}
 .hp-section-title{font-size: 2em;}
 .recent-projects-container{padding-bottom: 20%;}
 .hiw-content-block{margin-bottom: 20px; padding: auto; min-height: 0px;}
-.hiw-content-title{font-size: 1.5em;}
 /*.page-title-ln1{font-size: 1em;}
 .page-title-ln2{font-size: .4em;}*/
 .graphicsPortfolio .col-xs-6,.graphicsPortfolio .col-sm-6{padding-left: 0px;}

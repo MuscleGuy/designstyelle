@@ -1,4 +1,4 @@
-<section id="hero" class="container-fluid page-hero">
+<section id="hero" class="container-fluid page-hero login-page-hero">
   <div class="row">
 
   <div id="page-title" class="container">
@@ -27,9 +27,6 @@
 </div>
 </section><!--end container-->
 
-<section id="testContent" class="container">
-
-</section>
 <section id="login-section" class="container">
   <h2 class="hp-section-title cerise1 text-center">Login to Your <span>Account</span></h2>
 
@@ -37,8 +34,8 @@
     <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
   <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" id="login-form">
     <fieldset>
-      <input type="text" class="" name="user_name" formControlName="user_name" placeholder="User Name" required />
-      <input type="password" class="" name="password" formControlName="password" placeholder="Password" required />
+      <input type="email" class="login-email" name="email" formControlName="email" placeholder="Enter Email Address" required autofocus/>
+      <input type="password" class="login-password" name="password" formControlName="password" placeholder="Enter Password" required />
 <!--
     <table id="login-form-table">
     <td><input type="text" class="" name="user_name" formControlName="user_name" placeholder="User Name" required /></td>
@@ -46,14 +43,16 @@
   </table> -->
   </fieldset>
 
-<fieldset class="text-center">
-  <button type="submit" class="btn btn-normal" [disabled]="!form.valid">Submit Form</button>
+<fieldset class="text-center login-buttons">
+  <button type="submit" class="btn btn-normal">Submit Form</button>
   <button type="reset" class="btn btn-normal">Reset Form</button>
 </fieldset>
 
 </form>
 </div>
 </div>
+
+  <!-- [disabled]="!form.valid" -->
 
 
 <div class="row other-login-options">

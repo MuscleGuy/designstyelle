@@ -143,8 +143,9 @@ li a.mail-icon-circle:hover i{background-color: #FFF; color:#1187de; transition:
 #mobileNav ul{text-align: center; margin-top: 15%;}
 #mobileNav ul li{padding:3% 0;}
 #mobileNav ul li a{text-decoration: none; color: #FFF; font-size: 2em;}
-.signup-mobile{}
+.signup-mobile{margin-top: 20px;}
 .signup-mobile a{color:#1187de !important; background: #FFF; padding: 10px 30px;}
+#mobileNav ul li.signup-mobile{margin-top: 40px;}
 
 /*STYLING FOR THE HERO IMAGE*/
 #hero{clip-path:polygon(0% 0%, 100% 0, 100% 100%, 55% 100%, 55% 87%, 0% 87%);background-color:#111; padding-bottom: 7%;}
@@ -403,7 +404,7 @@ figcaption.project-details span{display: block; clear:both;}
 .social-features li{padding-bottom: 10px;}
 
 /*LOGIN PAGE*/
-#login-section{padding: 55px 0;}
+#login-section{padding: 55px auto;}
 #login-section input:first-of-type{margin-bottom: 20px;}
 #login-section input{min-height: 50px; width: 100%; max-width: 330px; margin: auto; display: block; clear: both; padding-left: 8px;}
 #login-section h2{margin-bottom: 30px;}
@@ -582,17 +583,16 @@ figure.project-pic{max-height: 320px;}
 .hero-fg-ln1,.hero-fg-ln2{font-size: .65em; font-family: Avenir-UltraLight; display:inline;}
 .hero-fg-text h1{line-height: .8em !important; margin-top:-30px; font-size: 3.5em;}
 .portfolio-button-hp{margin-top: 30px;}
-#portfolio-hover, .portfolio-hover{display: none !important;}
-
+/*#portfolio-hover, .portfolio-hover{display: none !important;}*/
 .portfolio-block{max-height: none;}
-
-.hiw-content-block{max-height: 265px;}
+.hiw-content-block{max-height: 285px;}
 .pricing-hiw{background-color:#1187de; color:#FFF !important; margin-bottom:0px; margin-top: 60px;}
-.pricing-hiw a, .pricing-hiw .pricing-number, x.pricing-hiw .pricing-term, .pricing-hiw .pricing-disclosure{color:#FFF !important;}
+.pricing-hiw a, .pricing-hiw .pricing-number, .pricing-hiw .pricing-term, .pricing-hiw .pricing-disclosure{color:#FFF !important;}
 .pricing-hiw  .btn-normal{border:1px solid #FFF !important;}
+.other-login-options{display: none;}
 .step-one-sol .button-spacing{text-align: center;}
 .step-three-sol,.step-two-sol .col, .step-one-sol{padding-left:25px; padding-right: 25px;}
-
+.login-buttons button{display: block !important; width: 100% !important; margin: 15px auto !important;}
 .pricing-block{}
 .pricing-block1{}
 .pricing-block2{margin-top:40px;}
@@ -626,6 +626,8 @@ figure.project-pic{max-height: 320px;}
 .social-media-contact-pg{display: none;}
 #contact-form-table td{display: block; padding-bottom: 30px; width: 100%;}
 #contact-section label{padding-bottom: 10px;}
+#hero.login-page-hero,.login-page-hero{display: none !important;}
+#login-section{padding-top: 125px; padding-bottom: 95px;}
 }
 
 

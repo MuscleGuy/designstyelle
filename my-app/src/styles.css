@@ -221,7 +221,7 @@ figcaption.project-details span{display: block; clear:both;}
 .pricing-divider-bottom{}
 
 /*CTA BLOCKS*/
-#cta-blocks-hp{padding-top: 5%; padding-bottom: 10%;}
+#cta-blocks-hp{padding-top: 5%; padding-bottom: 15%;}
 .cta-blocks-header{margin-bottom: 35px; padding-left: 10%; padding-right: 10%;}
 .cta-blocks-wrapper{background: url('./assets/img/homepage/cta-blocks-bg.jpg') no-repeat center center; background-size: cover;}
 /*.cta-blocks{display:-webkit-flex; display: -ms-flexbox; display: flex; overflow: hidden; align-items: top; align-content: center; justify-content: center;}*/
@@ -232,7 +232,7 @@ figcaption.project-details span{display: block; clear:both;}
 .overlay-content-padding{padding: 5%;}
 .overlay-content-white{color:#fff;}
 .overlay-content-white a{color:#fff;}
-.cta-block-content{padding-top: 80px; padding-bottom: 80px; padding-left: 1em; padding-right: 1em; width: 100%; height: 100%; min-height: 380px;}
+.cta-block-content{padding-top: 80px; padding-bottom: 80px; padding-left: 1em; padding-right: 1em; width: 100%; height: 100%; min-height: 400px;}
 .cta-type-blog{text-align: center;}
 .cta-type-blog1{background-color: #78244c; color: #FFF;}
 .cta-type-blog2{background-color: #e07401; color: #FFF;}
@@ -265,7 +265,7 @@ figcaption.project-details span{display: block; clear:both;}
 .team-thumbnails{display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; align-items: center; margin:1.5em 0;}
 .member-select{padding:.2em;}
 .thumb-name{text-align: center; padding: 3% 0 1% 0; font-size: 1.3em; font-family: Avenir-Medium;}
-.thumb-desc{text-align: center; font-size: 1.1em; font-style: italic;}
+.thumb-desc{text-align: center; font-size: .8em; font-style: italic;}
 .member-thumb{border: 1px solid rgba(51,51,51,.1); padding:1em 2em;}
 .member-thumb img{filter:grayscale(100);}
 .member-thumb:hover img{filter:grayscale(0); transition: filter 1s;}

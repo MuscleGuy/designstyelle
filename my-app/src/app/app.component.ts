@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 
 declare var $:any;
@@ -9,21 +10,15 @@ declare var $:any;
 })
 export class AppComponent implements OnInit{
 
+constructor(private router: Router) { }
 
-ngOnInit(){
-
-
-
-// $('#menubars').click(function(){
-//   $('#mobileNavContainer').toggle(function(){
-//
-// }, function(){
-//
-// });
-// });
-
-
-
-}
+ngOnInit() {
+        this.router.events.subscribe((evt) => {
+            if (!(evt instanceof NavigationEnd)) {
+                return;
+            }
+            window.scrollTo(0, 0)
+        });
+    }
 
 }

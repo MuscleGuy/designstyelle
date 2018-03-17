@@ -1,4 +1,4 @@
-<section id="hero" class="container-fluid">
+<section id="hero" class="container-fluid signup-hero">
   <div class="row">
 
   <div id="page-title" class="container">
@@ -24,14 +24,12 @@
 </div>
 </section><!--end container-->
 
-<section id="testContent" class="container">
 
-</section>
 <section id="signup-section" class="container">
 
-<div class="row row-eq-height">
+<div id="signup-section-row" class="row">
 
-<div class="col-lg-3">
+<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-3 signup-blurb">
   <h2 class="hp-section-title cerise1">Signup <span>Today</span></h2>
 
 <p>Fill out the form to get started on your project. Select the applicable package and be sure to schedule a date and time that works best for you. Here's a <a href="#" class="">bit of information</a> that will help you on the initial consultation.</p>
@@ -48,114 +46,52 @@
 <li><a href="https://facebook.com"><i class="fa fa-pinterest"></i></a></li>
 <li><a href="https://facebook.com"><i class="fa fa-dribbble"></i></a></li>
 </ul>
-
 </div>
 
-<div class="col-lg-9">
+
+<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-9">
 
 <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" *ngIf="showSignupForm" id="signup-form">
-<!-- <fieldset class="form-group"> -->
 
-<table id="signup-form-table">
+    <div class="signup-form-section-header signup-form-section-header1 col col-xs-12 col-sm-12 col-md-12 col-lg-12">Register & Contact Information</div>
 
-  <fieldset>
-    <tr>
-      <span class="signup-form-section-header">
-        Register & Contact Information
-      </span>
-    </tr>
-  </fieldset>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-2 signup-col"><label for="user_name">User Name <span class="red">*</span></label></div>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4 signup-col"><input type="text" name="user_name" class="" placeholder="Select User Name" formControlName="user_name" autofocus required/></div>
 
-  <fieldset class="form-group form-group-1">
-    <tr>
-      <td><label for="user_name">User Name <span class="red">*</span></label><input type="text" name="user_name" class="" placeholder="Select User Name" formControlName="user_name" required/></td>
-      <td><label for="user_password">Password<span class="red">*</span></label><input type="password" name="user_password" class="" placeholder="Enter Password" formControlName="user_password" required/></td>
-      <td><label for="verify_password">Verify Password<span class="red">*</span></label><input type="password" name="verify_password" class="" placeholder="Verify Password" formControlName="verify_password" required/></td>
-    </tr>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-2 signup-col"><label for="email">Email <span class="red">*</span></label></div>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4 signup-col"><input type="email" name="email" class="" placeholder="email@email.com" formControlName="email" required/></div>
 
-    <tr>
-      <td><label for="first_name">First Name <span class="red">*</span></label><input type="text" name="first_name" class="" placeholder="Enter First Name" formControlName="first_name" required/></td>
-      <td><label for="last_name">Last Name <span class="red">*</span></label><input type="text" name="last_name" class="" placeholder="Enter Last Name" formControlName="last_name" required/></td>
-      <td><label for="email">Email <span class="red">*</span></label><input type="email" name="email" class="" placeholder="email@email.com" formControlName="email" required/></td>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-2 signup-col"><label for="user_password">Password <span class="red">*</span></label></div>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4 signup-col"><input type="password" name="user_password" class="" placeholder="Enter Password" formControlName="user_password" required/></div>
 
-    </tr>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-2 signup-col"><label for="verify_password">Verify Password <span class="red">*</span></label></div>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4 signup-col"><input type="password" name="verify_password" class="" placeholder="Verify Password" formControlName="verify_password" required/></div>
 
-</fieldset>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-2 signup-col"><label for="first_name">First Name <span class="red">*</span></label></div>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4 signup-col"><input type="text" name="first_name" class="" placeholder="Enter First Name" formControlName="first_name" required/></div>
 
-  <fieldset>
-    <tr>
-      <span class="signup-form-section-header">
-        Let's Chat!
-      </span>
-    </tr>
-  </fieldset>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-2 signup-col"><label for="last_name">Last Name <span class="red">*</span></label></div>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4 signup-col"><input type="text" name="last_name" class="" placeholder="Enter Last Name" formControlName="last_name" required/></div>
 
-<fieldset class="form-group form-group-1">
+    <div class="signup-form-section-header signup-form-section-header2 col col-xs-12 col-sm-12 col-md-12 col-lg-12">Let's Chat!</div>
 
-    <!-- <tr>
-      <td class="signup-form-section-header">
-        How Can We Help?
-      </td>
-    </tr>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-2 signup-col"><label for="initial_consultation_date">Consultation Date <span class="red">*</span></label></div>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4 signup-col"><input class="" type="date" name="initial_consultation_date" formControlName="initial_consultation_date" required/></div>
 
-  <tr>
-    <td><label for="client_url">Current Website</label><input type="client_url" name="client_url" class="" placeholder="www.yourSite.com" formControlName="client_url"/></td>
-    <td><label for="package">Select Your Package <span class="red">*</span></label>
-      <select class="" name="package" formControlName="package" required>
-        <option value disabled selected>
-          Click To Select
-        </option>
-        <option value="core_package">
-          Core Package $349
-        </option>
-        <option value="marketing_package">
-          Marketing Package $999
-        </option>
-        <option class="media_package">
-          Media Package $1,999
-        </option>
-      </select>
-    </td>
-  </tr> -->
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-2 signup-col"><label for="initial_consultation_time">Select a Time <span class="red">*</span></label></div>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4 signup-col"><select class="" name="initial_consultation_time" formControlName="initial_consultation_time" required>
+      <option class="" value required selected>Click To Select</option>
+      <option value="1200pm">12:00pm EST</option>
+      <option value="100pm">1:00pm EST</option>
+    </select></div>
 
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-2 signup-col"><label for="phone">Phone <span class="red">*</span></label></div>
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4 signup-col"><input type="tel" name="phone" class="" placeholder="1234567890" formControlName="phone" required/></div>
 
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 signup-submit-btns">
+    <button type="submit" class="btn btn-normal" [disabled]="!form.valid">Submit Form</button>
+    <button type="reset" class="btn btn-normal">Reset Form</button></div>
 
-    <tr>
-
-    <td><label for="initial_consultation_date">Consultation Date <span class="red">*</span></label>
-
-      <input class="" type="date" name="initial_consultation_date" formControlName="initial_consultation_date" required/>
-    </td>
-
-    <td>
-      <label for="initial_consultation_time">Select a Time <span class="red">*</span></label>
-      <select class="" name="initial_consultation_time" formControlName="initial_consultation_time" required>
-        <option class="" value required selected>
-          Click To Select
-        </option>
-        <option value="1200pm">
-          12:00pm EST
-        </option>
-        <option value="100pm">
-          1:00pm EST
-        </option>
-
-
-      </select>
-    </td>
-
-    <td><label for="phone">Phone <span class="red">*</span></label><input type="tel" name="phone" class="" placeholder="1234567890" formControlName="phone" required/></td>
-
-  </tr>
-</fieldset>
-</table>
-
-<fieldset>
-  <button type="submit" class="btn btn-normal" [disabled]="!form.valid">Submit Form</button>
-  <button type="reset" class="btn btn-normal">Reset Form</button>
-</fieldset>
-
-<!-- <div *ngIf="form.controls.name.errors?.pattern">Name is invalid</div> -->
 </form>
 
 <span class="confirmationMessage" *ngIf="showConfirmationMessage">
@@ -165,13 +101,6 @@
 <h3 class="cf-expectations">We will contact you shortly. <span (click)="ngOnInit()" class="hoverCursor cerise">Click Here</span> to submit a new form.</h3>
 
 </span>
-
 </div>
-
-</div>
-
-
-<div class="col-lg-2">
-
 </div>
 </section>

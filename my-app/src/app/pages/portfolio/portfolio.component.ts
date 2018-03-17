@@ -1,37 +1,39 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, AfterViewChecked} from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument} from 'angularfire2/firestore';
 import { Observable } from 'rxjs/Observable';
+import { Item } from '../../models/Item';
+
+// import { PortfolioItemsComponent } from '../../components/portfolio-items/portfolio-items.component';
+import { PortfolioService } from '../../services/portfolio.service';
 
 @Component({
 
 selector:'portfolio',
-templateUrl:'./portfolio.component.html'
+templateUrl:'./portfolio.component.html',
+providers:[PortfolioService]
 
 })
 
-export class PortfolioComponent {
+export class PortfolioComponent implements OnInit{
 
+  items : Item[];
   prices: Observable<any[]>;
-  constructor(private db: AngularFirestore) {
+
+  constructor(private db: AngularFirestore, public portfolioService: PortfolioService) {
   this.prices = db.collection('pricing').valueChanges();
   }
 
-  ngOnInit(){
+ngOnInit(){
 
-  }
+this.portfolioService.getItems().subscribe(items => {
+  this.items = items;
+  // console.log(items);
+});
 
-  // private itemDoc: AngularFirestoreDocument<Item>;
-  // item: Observable<Item>;
-  //   constructor(private afs: AngularFirestore) {
-  //   this.itemDoc = afs.doc<Item>('portfolio/design_portfolio');
-  //   this.item = this.itemDoc.valueChanges();
-  // }//end constructor
-  //
-  // update(item: Item) {
-  //   this.itemDoc.update(item);
-  // }
-  //
-  // ngOnInit() {
-  //
-  // }
+}
+
+ngAfterViewChecked() {
+}
+
+
 }//end class

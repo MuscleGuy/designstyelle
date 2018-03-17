@@ -5,19 +5,23 @@ import { Item } from '../../models/Item';
 @Component({
   selector: 'app-portfolio-items',
   templateUrl: './portfolio-items.component.html',
-  styleUrls: ['./portfolio-items.component.css']
+  styleUrls: ['./portfolio-items.component.css'],
 })
-export class PortfolioItemsComponent implements OnInit {
+
+
+export class PortfolioItemsComponent implements OnInit{
 
   items : Item[];
 
-  constructor(public portfolioService: PortfolioService) { }
+  constructor(public portfolioService: PortfolioService) {}
 
   ngOnInit() {
     this.portfolioService.getItems().subscribe(items => {
       this.items = items;
-      console.log(items);
-    })
+      // console.log(items);
+    });
   }
+
+
 
 }

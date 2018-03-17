@@ -1,24 +1,26 @@
-<div *ngIf="items?.length > 0;">
-
-
+<ng-container>
+<div *ngIf="items?.length > 0;" id="gallery-wrapper" data-featherlight-gallery data-featherlight-filter="a.gallery">
   <div *ngFor="let item of items">
-    <div class="portfolio-block col col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-      <span class="portfolio-img"><img src="./assets/img/portfolio/{{item.project_pic}}" /></span>
+    <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+<div class="portfolio-block">
+  <span class="portfolio-img"><figure><img src="./assets/img/portfolio/{{item.project_pic}}" /></figure></span>
+  <span class="portfolio-hover">
+  <span class="portfolio-hover-content">
+  <span class="portfolio-title">{{item.project_title}}</span>
+  <span class="portfolio-summary">{{item.project_summary}}</span>
+  <span class="portfolio-icons"><a class="gallery" href="./assets/img/portfolio/{{item.project_pic}}"><i class="fa fa-search-plus fa-2x"></i></a></span>
+  <div class="portfolio-similar"><a routerLink="/signup">Click to build a similar site.</a></div>
+
+</span>
+
+</span>
+</div>
+
     </div>
   </div>
 
+
 </div>
 
 
-
-<!--
-
-
-<div class="portfolio-block col col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-  <span class="portfolio-img"><img src="./assets/img/portfolio/alluafitnessproject1.jpg" /></span>
-  <span class="portfolio-title text-center">All U A Fitness Project</span>
-  <span class="portfolio-summary text-center">Project Summary</span>
-</div>
-
-
--->
+</ng-container>

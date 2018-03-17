@@ -3,7 +3,7 @@
   <div class="row">
 
   <div class="col col-xs-9 col col-sm-9 col col-md-4 col col-lg-5">
-    <div id="logo"><a routerLink="/"><img src="./assets/img/logos/styelle-logo.png"/></a></div>
+    <div (click)="mobileNavClicked()" id="logo"><a routerLink="/"><img src="./assets/img/logos/logo-250.png"/></a></div>
   </div>
 
 
@@ -11,17 +11,21 @@
     <nav id="mainNav" class="row align-items-center">
     <ul>
       <li>
-        <a routerLink="/how-it-works">How It Works</a>
+        <a class="mainNav-link" routerLink="/how-it-works">How It Works</a>
       </li>
       <li>
-        <a routerLink="/solutions">Solutions</a>
+        <a class="mainNav-link" routerLink="/solutions">Solutions</a>
 </li>
       <li>
-        <a routerLink="/portfolio">Portfolio</a>
+        <a class="mainNav-link" routerLink="/portfolio">Portfolio</a>
       </li>
-<li>
-  <a routerLink="/contact">Contact</a>
-</li>
+      <li>
+        <a class="mainNav-link" routerLink="/contact">Contact</a>
+      </li>
+
+      <li>
+        <a class="mainNav-link" routerLink="/login">Login</a>
+      </li>
 
       <li class="contact-link">
         <a href="mailto:support@designstyelle.com" class="mail-icon-circle"><i class="fa fa-envelope"></i></a>
@@ -29,7 +33,7 @@
     </ul>
     </nav>
 
-    <div id="menubars" class=""><i class="fa fa-bars"></i></div>
+    <div id="menubars" (click)="menubars()"><i class="fa fa-bars"></i></div>
 
   </div>
 
@@ -38,22 +42,25 @@
 
     <nav id="mobileNav" class="col col-lg-12 align-items-center">
     <ul>
-    <li>
+    <li class="mobileNav-link" (click)="mobileNavClicked()">
       <a routerLink="/how-it-works">How It Works</a>
     </li>
-    <li>
+    <li class="mobileNav-link" (click)="mobileNavClicked()">
       <a routerLink="/solutions">Solutions</a>
     </li>
-    <li>
+    <li class="mobileNav-link" (click)="mobileNavClicked()">
       <a routerLink="/portfolio">Portfolio</a>
     </li>
-<li>
-  <a routerLink="/contact">Contact</a>
-</li>
+    <li class="mobileNav-link" (click)="mobileNavClicked()">
+      <a routerLink="/contact">Contact</a>
+    </li>
+    <li class="mobileNav-link" (click)="mobileNavClicked()">
+      <a routerLink="/login">Login</a>
+    </li>
 
-<li class="signup-mobile">
-  <a routerLink="/signup">Signup Today</a>
-</li>
+    <li (click)="mobileNavClicked()" class="signup-mobile">
+      <a routerLink="/signup">Signup Today</a>
+    </li>
 
     </ul>
     </nav>

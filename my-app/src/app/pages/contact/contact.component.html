@@ -1,4 +1,4 @@
-<section id="hero" class="container-fluid">
+<section id="hero" class="container-fluid page-hero">
   <div class="row">
 
   <div id="page-title" class="container">
@@ -16,6 +16,9 @@
 
 <svg class="svg-arrow-three" xmlns="http://www.w3.o" height="10" width="10"><polygon points="5,10 10,0, 0,0" fill="none" stroke="#049cbf" stroke-width="1"></polygon></svg>
 
+<div class="signup-button col col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+      <div class="btn-container portfolio-button-hp"><a href="/signup" class="btn btn-default">Signup Today!</a></div>
+</div>
 </div><!--end page-title-->
 </div><!--end row-->
 </div><!--end container-->
@@ -24,14 +27,11 @@
 </div>
 </section><!--end container-->
 
-<section id="testContent" class="container">
-
-</section>
 <section id="contact-section" class="container">
 
-<div class="row row-eq-height">
+<div class="row">
 
-<div class="col-lg-3">
+<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-3">
   <h2 class="hp-section-title cerise1">Contact <span>Us</span></h2>
 
 <p>Fill out the form and hit submit. You'd be surprised how fast we respond.</p>
@@ -49,13 +49,13 @@
 
 </div>
 
-<div class="col-lg-9">
+<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-9">
 
 <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" *ngIf="showContactForm" id="contact-form">
 <fieldset class="form-group">
 <table id="contact-form-table">
   <tr>
-    <td><label for="">Name</label><input type="text" name="name" class="" placeholder="Enter Your Full Name" formControlName="name" required/></td>
+    <td><label for="">Name</label><input type="text" name="name" class="" placeholder="Enter Your Full Name" formControlName="name" autofocus="true"  required/></td>
     <td><label for="">Email</label><input type="email" name="email" class="" placeholder="email@email.com" formControlName="email" required/></td>
     <td><label for="">Phone</label><input type="tel" name="phone" class="" placeholder="(123) 456-7890 or 1234567890" formControlName="phone"/></td>
   </tr>
@@ -67,7 +67,7 @@
 </fieldset>
 
 <fieldset>
-  <button type="submit" class="btn btn-normal" [disabled]="!form.valid">Submit Form</button>
+  <button type="submit" class="btn btn-normal contact-submit-btn" [disabled]="!form.valid">Submit Form</button>
 </fieldset>
 
 <div *ngIf="form.controls.name.errors?.pattern">Name is invalid</div>

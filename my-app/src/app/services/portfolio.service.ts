@@ -10,7 +10,6 @@ export class PortfolioService {
   items: Observable<Item[]>;
 
   constructor(public afs: AngularFirestore) {
-    // this.items = this.afs.collection('design_portfolio').valueChanges();
     this.items = this.afs.collection('design_portfolio').snapshotChanges().map(changes => {
     return changes.map(a => {
       const data = a.payload.doc.data() as Item;

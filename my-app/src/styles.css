@@ -408,7 +408,27 @@ figcaption.project-details span{display: block; clear:both;}
 .social-features{margin:5% 0%;}
 .social-features li{padding-bottom: 10px;}
 
+
+
+
+
+
+
 /*LOGIN PAGE*/
+/*#login-section{padding: 55px auto;}
+#login-section input:first-of-type{margin-bottom: 20px;}
+#login-section input{min-height: 50px; width: 100%; max-width: 330px; margin: auto; display: block; clear: both; padding-left: 8px;}
+#login-section h2{margin-bottom: 30px;}
+#login-form{width:70%; margin: auto;}
+#login-form fieldset{margin-bottom: 20px;}
+#login-form-table{width:100%;}
+#login-form-table td{width: 50%; padding-right:15px;}
+#login-form-table td:last-of-type{padding-right:0px;}
+.other-login-options{display: block; clear: both; margin:20px;}
+#other-login-options-table{width: 100%;}*/
+
+
+/*MEMBER PAGE*/
 #login-section{padding: 55px auto;}
 #login-section input:first-of-type{margin-bottom: 20px;}
 #login-section input{min-height: 50px; width: 100%; max-width: 330px; margin: auto; display: block; clear: both; padding-left: 8px;}
@@ -421,15 +441,21 @@ figcaption.project-details span{display: block; clear:both;}
 .other-login-options{display: block; clear: both; margin:20px;}
 #other-login-options-table{width: 100%;}
 
-/*MEMBER PAGE*/
-#member-section{padding: 55px 0;}
+/*#member-section{padding: 55px 0;}
 #member-section input{min-height: 43px; width: 100%; padding-left: 8px;}
 #member-section label{padding-right: 10px;}
 #member-form fieldset{margin-bottom: 20px;}
 #member-form textarea{min-height: 200px;}
 #member-form-table{width:100%;}
 #member-form-table td{width: 33%; padding-right:15px;}
-#member-form-table td:last-of-type{padding-right:0px;}
+#member-form-table td:last-of-type{padding-right:0px;}*/
+
+
+
+
+
+
+
 
 /*MARKETING PAGE*/
 #marketing-section{padding-top:55px;}

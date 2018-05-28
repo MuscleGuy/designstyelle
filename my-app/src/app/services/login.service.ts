@@ -16,14 +16,6 @@ export class LoginService {
             .catch(function(error){
               this.errorCode = error.code;
               this.errorMessage = error.message;
-
-                  // [START_EXCLUDE]
-                  if (errorCode === 'auth/wrong-password') {
-                    alert('Wrong password.');
-                  } else {
-                    alert(errorMessage);
-                  }
-                  console.log(error);
           });
   }
 

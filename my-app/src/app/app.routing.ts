@@ -9,10 +9,8 @@ import {ProductComponent} from './pages/product/product.component';
 import {DevelopmentComponent} from './pages/development/development.component';
 import {BrandingComponent} from './pages/branding/branding.component';
 import {SignupComponent} from './pages/signup/signup.component';
-import {MembersComponent} from './pages/members/members.component';
 
 const appRoutes: Routes = [
-{path:'members', component:MembersComponent},
 {path:'signup', component:SignupComponent},
 {path:'branding', component:BrandingComponent},
 {path:'development', component:DevelopmentComponent},
